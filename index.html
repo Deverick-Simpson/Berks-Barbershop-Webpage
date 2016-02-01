@@ -11,73 +11,251 @@
 		<title>Berks Barbershop</title>
 		<meta name="description" content="Berks Barbershop">
 		<meta name="keywords" content="Berks Barbershop" />
-		<meta name="author" content="imransdesign.com">
+		<meta name="author" content="Deverick Simpson">
 
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-
+		
 
 		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="css/bootstrap.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="css/main.css">
 		<link rel="stylesheet" href="bower_components/owl-carousel/css/owl.carousel.css">
 		<link rel="stylesheet" href="bower_components/owl-carousel/css/owl.theme.css">
 		
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-	<script src="bower_components/owl-carousel/js/owl.carousel.min.js"></script>
+		<!--Animate Containers-->
+		<link rel="stylesheet" href="css/animate.css">
+		
+		<!--Font Awesome Link-->
+		<link rel="stylesheet" href="js/font-awesome/css/font-awesome.min.css">
+		
+		
+		<!--PhotoGallery StyleSheet-->
+		<link rel="stylesheet" href="bower_components/galereya/css/jquery.galereya.css">
+		<link rel="stylesheet" href="bower_components/galereya/css/jquery.galereya.ie.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="bower_components/owl-carousel/js/owl.carousel.min.js"></script>
 
 	</head>
 	
 	<body>      
-	<header id="header" class="header-main">
-		<nav class="navbar navbar-inverse">
-		  <div class="container-fluid">
-			<div class="navbar-header">
-			  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			  </button>
-			  <a class="navbar-brand page-scroll" href="#">Berks Barbershop</a>
+		<header id="header" class="header-main">
+			<nav class="navbar navbar-inverse">
+			  <div class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand page-scroll" href="#">Berks Barbershop</a>
+				</div>
+
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<!--Finish Links-->
+						<li><a class="page-scroll" href="#">Home</a></li>
+						<li><a class="page-scroll" href="#team-section">Barbers</a></li>     
+						<li><a class="page-scroll" href="#about-section">About Us</a></li>
+						<li><a class="page-scroll" href="#portfolio-section">Photos</a></li>         	   	                               
+						<li><a class="page-scroll" href="#prices-section">Prices</a></li>
+						<li><a class="page-scroll" href="#contact-section">Contact and Location</a></li> 
+					</ul>
+				</div><!-- /.navbar-collapse -->
+			  </div>
+			</nav>
+		 </header>
+		 
+		<div class="container-fluid" >
+				<div class="row ">
+					<div class="col-md-12 "> 
+						<video class="video" autoplay loop poster="">
+							
+							<source src="video/berks2.mp4" type="video/mp4">
+								
+						</video>
+					<h1 class="text-center fore">Berks Barbershop</h1>
+							<!--
+ 	 						<div class="video" data-vide-bg="video/berks2.mp4" 
+							 data-vide-options="loop: true, muted: true,resizing:true">
+							<h1>Berks Barbershop</h1>
+							</div>
+							 -->
+					
+					</div>
+				</div>
+		</div>
+ 	 <!--
+		<div class="container-fluid" >
+				<div class="row">
+					<div class="col-md-12"> 
+						<div data-vide-bg="video/berks2.mp4" 
+							 data-vide-options="loop: true, muted: true,resizing:true">
+							<div id="owl-intro-text" class="owl-carousel owl-theme  ">
+								<div class="owl-item text-center">
+									<h1>Berks Barbershop</h1>
+										<p>Visit Lincoln's finest</p>
+								</div>
+								<div class="owl-item text-center">
+									<h1>It's just better here</h1>
+										<p>9am-6pm Tues-Saturday</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</div>
+		-->
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Our Team</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Meet our professionals</p>
+					</div>
+				</div>
 			</div>
+			<div class="row text-center">
+				
+						<div class="col-md-3 col-xs-6 owl-item"><img class="img-fluid img-responsive img-circle center-block" src="img/bio/berksCover.jpg" alt="Cory Berks"/></div>
+						<div class="col-md-3 col-xs-6 owl-item"><img class="img-fluid img-responsive img-circle center-block" src="img/bio/nateCover.jpg" alt="Nate Berks"/></div>
+						<div class="col-md-3 col-xs-6 owl-item"><img class="img-fluid img-responsive img-circle center-block" src="img/bio/thordyCover.jpg" alt="Matt Thornton"/></div>
+						<div class="col-md-3 col-xs-6 owl-item"><img class="img-fluid img-responsive img-circle center-block" src="img/bio/tonyCover.jpg" alt="Tony Parker"/></div>
+				
 			
-			  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                        <!--Finish Links-->
-                            	<li><a class="page-scroll" href="#">Home</a></li>
-                            	<li><a class="page-scroll" href="#team-section">Barbers</a></li>     
-                            	<li><a class="page-scroll" href="#about-section">About Us</a></li>
-                            	<li><a class="page-scroll" href="#portfolio-section">Photos</a></li>         	   	                               
-                           		<li><a class="page-scroll" href="#prices-section">Prices</a></li>
-                           		<li><a class="page-scroll" href="#contact-section">Contact and Location</a></li> 
-                        </ul>
-            	</div><!-- /.navbar-collapse -->
-		  </div>
-		</nav>
- 	 </header>
- 	 
- 	 
-	<div class="container-fluid" id="helper" style="width: 1000px; height: 500px;"
-  		data-vide-bg="video/berks2.mp4" 
-  		data-vide-options="loop: true, muted: true, position: 50% 50%, resizing:true">
-  		
-		<div id="owl-intro-text" class="owl-carousel owl-theme">
-			<div class="text-center" class="owl-item">
-				<h1>Berks Barbershop</h1>
-					<p>Visit Lincoln's finest</p>
-			</div>
-			<div class="text-center">
-				<h1>It's just better here</h1>
-					<p>9am-6pm Tues-Saturday</p>
 			</div>
 		</div>
-	</div>
+		
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>About Us</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">If you didn't know</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<h4>Who We Are?</h4>
+						<p>Owners are brothers; Cory and Nate Berks.  Matt Thornton joined 
+							November 2013.  Tony Parker joined May 2015. </p>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h4>What We Do?</h4>
+						<p>Berks Barbershop offers top notch services to the average man at affordable prices.</p>
 
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h4>Why We Do It?</h4>
+						<p>Berks Barbershop was established with the intention of being Lincoln's
+							premiere barbershop.  The goal was to provide our clients with the highest quality service 
+							through professional consultation, attention to detail, customer service, and consistency.</p>
+				</div>
+				<div class="col-md-3 col-sm-3">
+					<h4>Since When?</h4>
+						<p>Berks barber shop opened its doors on May 11, 2013.  Visit for our anniversary Barbecue and Husker Tailgate party.</p>
+				</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Our Work</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Fresh Cuts and Designs</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
 	
-
-
-
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Some Fun Facts</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">In case you didn't know</p>
+					</div>
+				</div>
+			</div>
+			<div class="row text-center"> 
+				<div class="text-center col-md-3 col-sm-6">
+					<i class="fa fa-users fa-3x"></i>
+					<span class="counter text-center">957</span>
+					<p class="lead">Clients Visiting Berks Barbershop</p>
+				</div>
+				<div class="text-center col-md-3 col-sm-6"></div>
+					<i class="fa fa-scissors fa-3x"></i>
+					<span class="counter text-center">4</span>
+					<p class="lead">Competitions attentded</p>
+				<div class="text-center col-md-3 col-sm-6"></div>
+					<i class="fa fa-trophy fa-3x"></i>
+					<span class="counter text-center">9</span>
+					<p class="lead text-center">Winning Awards</p>
+				<div class="text-center col-md-3 col-sm-6"></div>
+					<i class="fa fa-television fa-3x"></i>
+					<span class="counter text-center">1100</span>
+					<p class="lead text-center">Episodes of 106 and Park</p>
+			</div>
+		</div>		
+		
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Prices</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Additional $5 for appointment</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Reviews</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">What people say about us</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Join Us</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Follow Us on Social Networks</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Contacts</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Reach out to us</p>
+					</div>
+				</div>
+			</div>
+		</dov>
 					
 	
 	  		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -86,7 +264,7 @@
 	<script>
 		$(document).ready(function() {
 		  $("#owl-intro-text").owlCarousel({
-				navigation : true, // Show next and prev buttons
+				navigation : false, // Show next and prev buttons
 				autoPlay : 3000,
        			slideSpeed : 300,
         		paginationSpeed : 400,
@@ -94,12 +272,25 @@
 		  });
 		});
 	</script>
+
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    
     <!--Vide fullscreen Video-->
     <script src="vide/src/jquery.vide.js"></script>
+
+  
+    <!--Animations for text-->
+    <script src="bower_components/wow/dist/wow.min.js"></script>
+    <script>
+		new WOW().init();
+    </script>
     
     <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
+    <!--Counting Animation-->
+    <script src="js/jquery.counterup.min.js"></script>
+    <!--Script to run gallery-->
+
 
 	</body>
 	

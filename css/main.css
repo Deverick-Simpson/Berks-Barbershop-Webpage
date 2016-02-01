@@ -1,0 +1,19 @@
+.pad{
+ padding-top: 50%
+}
+
+.padVideo{
+ padding-bottom: 60%
+}
+
+.video {
+    width: 100%;
+    height: auto;
+  	z-index: 0;
+}
+
+.fore{
+ 	z-index: 1;
+
+}
+
