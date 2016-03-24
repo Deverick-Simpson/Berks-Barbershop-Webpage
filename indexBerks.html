@@ -17,91 +17,121 @@
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
+		<script type='text/javascript' src='js/jquery.js'></script> 
+
+		
+		<!-- Custom Fonts -->
+		<!--Font Awesome Link-->
+		<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+		<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    
+
+   
+    
+		<!--Video Links-->
+		<script src="http://pupunzi.com/mb.components/mb.YTPlayer/demo/inc/jquery.mb.YTPlayer.js"></script>
+		
+		
+		
+		<!--UniteGallery-->
+		<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script> 
+		<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' /> 
+		<script type='text/javascript' src='unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
 
 		<!-- Libs and Plugins CSS -->
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
 		<link rel="stylesheet" href="css/main.css">
-		<link rel="stylesheet" href="bower_components/owl-carousel/css/owl.carousel.css">
-		<link rel="stylesheet" href="bower_components/owl-carousel/css/owl.theme.css">
 		
+		<!--Owl Containers-->
+		<link rel="stylesheet" href="bower_components/owl-carousel.2/assets/owl.carousel.css">
+		<link rel="stylesheet" href="bower_components/owl-carousel/css/owl.theme.css">
+
+
 		<!--Animate Containers-->
 		<link rel="stylesheet" href="css/animate.css">
 		
-		<!--Font Awesome Link-->
-		<link rel="stylesheet" href="js/font-awesome/css/font-awesome.min.css">
+
+
 		
-		
-		<!--PhotoGallery StyleSheet-->
-		<script src="GammaGallery/js/modernizr.custom.70736.js"></script>
-		<noscript><link rel="stylesheet" type="text/css" href="GammaGallery/css/noJS.css"/></noscript>		
-		<link rel="stylesheet" type="text/css" href="GammaGallery/css/style.css"/>
-		
-		
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-		<script src="bower_components/owl-carousel/js/owl.carousel.min.js"></script>
+
+		<!-- Include js plugin -->
+		<script src="bower_components/owl-carousel.2/owl.carousel.min.js"></script>
 
 		
 		<!--Custom bootstrap frame addition-->
 		<link href="bower_components/Bootflat/bootflat/css/bootflat.css" rel="stylesheet">
 		
-	</head>
-	
-	<body>   
-	
-	   
-		<header id="header" class="header-main">
-			<nav class="navbar navbar-inverse">
-			  <div class="container-fluid">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand page-scroll" href="#">Berks Barbershop</a>
-				</div>
-
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-right">
-						<!--Finish Links-->
-						<li><a class="page-scroll" href="#">Home</a></li>
-						<li><a class="page-scroll" href="#team-section">Barbers</a></li>     
-						<li><a class="page-scroll" href="#about-section">About Us</a></li>
-						<li><a class="page-scroll" href="#portfolio-section">Photos</a></li>         	   	                               
-						<li><a class="page-scroll" href="#prices-section">Prices</a></li>
-						<li><a class="page-scroll" href="#contact-section">Contact and Location</a></li> 
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			  </div>
-			</nav>
-		 </header>
 		
 
-				
-		<div class="container-fluid padVideo"   data-vide-bg="video/berksCompressed.mp4" 
-			 data-vide-options="loop: true, muted: true,resizing:true" >
-			 <div class="container-fluid">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"> 
-						<div id="owl-intro-text" class="owl-carousel owl-theme">
-							<div class="owl-item text-center">
-								<h1>Berks Barbershop</h1>
-									<p>Visit Lincoln's finest</p>
-							</div>
-							<div class="owl-item text-center">
-								<h1>It's just better here</h1>
-									<p>10am-6pm Tues-Saturday</p>
-							</div>
-						</div>
+
+	</head>
+	
+
+	
+	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+ 
+		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+			<div class="container-fluid">
+				<div class="row>
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+							<i class="fa fa-bars"></i>
+						</button>
+		
+					</div>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+						<ul class="nav navbar-nav">
+							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+							<li class="hidden">
+								<a href="#page-top"></a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#about">Barbers</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#prices">About Us</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#footer">Pricing</a>
+							</li>
+							<li>
+								<a class="page-scroll" href="#itinerary">Gallery</a>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
-		</div>
+		</nav>
+	
+
+		<!--Video Section-->
+			<section class="video-section">
+			  <div class="pattern-overlay">
+			  <a id="bgndVideo" class="player" data-property="{videoURL:'https://youtu.be/lrwbRynhM2I',containment:'.video-section', quality:'large', autoPlay:true, mute:true, opacity:1}">bg</a>
+				<div class="container">
+				  <div class="row">
+					<div id="owl-intro-text" class="col-md-12 col-lg-12 owl-carousel">
+						<div class="item text-center">
+							<h1>Berks Barbershop</h1>
+								<p>Visit Lincoln's finest</p>
+						</div>
+						<div class="item text-center">
+							<h1>It's just better here</h1>
+								<p>10am-6pm Tues-Saturday</p>
+						</div>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</section>
+		<!--Video Section Ends Here-->
 		
-		<div class="container-fluid bottom">
+		<div class="container-fluid page ">
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
@@ -162,7 +192,7 @@
 				</div>
 				<div class="col-lg-6 col-md-6 col-xs-6">
 					<div class="hovereffect">
-						<img class="img-fluid img-responsive img-circle center-block"  src="img/bio/edits/tonyChair.jpg" alt="Tony Parker"/>
+						<img class="img-fluid img-responsive img-circle center-block"  src="img/bio/tonyCover.jpg" alt="Tony Parker"/>
 							<div class="overlay">
 								<h2>Effect 13</h2>
 								<p> 
@@ -225,445 +255,151 @@
 					</div>
 				</div>
 			</section>
-
-		
-		<!--Gallery Section-->
+			
 		<div class="container-fluid">
-			<div class="row"> 
-				<div class="col-md-12">
-					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+			<div class="row">
+				<div class="col-lg-12  col-md-12 col-sm-12 col-xs-12">
+				<div class="text-center "  data-wow-delay="0.4s">
 						<h2>Our Work</h2>
 						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-						<p class="subtitle">Fresh Cuts and Designs</p>							
-						<div class="gamma-container gamma-loading" id="gamma-container">
-							<ul class="gamma-gallery">
-								<li>
-									<div data-alt="img01" data-description="<h3>Line Fade with Feather Design<br>$35</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/berksTops/top1.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/berksTops/top1.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/berksTops/top1.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/berksTops/top1.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/berksTops/top1.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/berksTops/top1.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/berksTops/top1.jpg"></div>
-										<noscript>
-											<img src="img/gallery/berksTops/top1.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-									<div data-alt="img01" data-description="<h3>Skin Taper with a Side Part<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/nateTops/top1.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/nateTops/top1.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/nateTops/top1.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/nateTops/top1.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/nateTops/top1.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/nateTops/top1.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/nateTops/top1.jpg"></div>
-										<noscript>
-											<img src="img/gallery/nateTops/top1.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Curly Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top1.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top1.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top1.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top1.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top1.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top1.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top1.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top1.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>All Even<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/thordyTops/top1.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/thordyTops/top1.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/thordyTops/top1.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/thordyTops/top1.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/thordyTops/top1.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/thordyTops/top1.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/thordyTops/top1.jpg"></div>
-										<noscript>
-											<img src="img/gallery/thordyTops/top1.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/tonyTops/top1.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/tonyTops/top1.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/tonyTops/top1.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/tonyTops/top1.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/tonyTops/top1.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/tonyTops/top1.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/tonyTops/top1.jpg"></div>
-										<noscript>
-											<img src="img/gallery/tonyTops/top1.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Curly Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/berksTops/top3.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/berksTops/top3.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/berksTops/top3.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/berksTops/top3.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/berksTops/top3.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/berksTops/top3.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/berksTops/top3.jpg"></div>
-										<noscript>
-											<img src="img/gallery/berksTops/top3.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade w/ a Double Side Part<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/nateTops/top2.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/nateTops/top2.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/nateTops/top2.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/nateTops/top2.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/nateTops/top2.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/nateTops/top2.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/nateTops/top2.jpg"></div>
-										<noscript>
-											<img src="img/gallery/nateTops/top2.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade w/ Side Part<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top2.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top2.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top2.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top2.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top2.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top2.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top2.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top2.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>								
+						<p class="subtitle">Fresh Cuts and Designs</p>		        
+					<div id="gallery" style="display:none;">
+					
+						<!--Begin Top 1-->
+						<img alt="Bourbon Street" src="img/gallery/berksTops/top1.jpg"
+						data-image="img/gallery/berksTops/top1.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/thordyTops/top2.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/thordyTops/top2.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/thordyTops/top2.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/thordyTops/top2.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/thordyTops/top2.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/thordyTops/top2.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/thordyTops/top2.jpg"></div>
-										<noscript>
-											<img src="img/gallery/thordyTops/top2.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>								
+						<img alt="Crab Hunting" src="img/gallery/nateTops/top1.jpg"
+						data-image="img/gallery/nateTops/top1.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+	
+						<img alt="Ship Island" src="img/gallery/tonyTops/top1.jpg"
+						data-image="img/gallery/tonyTops/top1.jpg"
+						data-description="Take a trip to the famous Ship Island">
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/tonyTops/top2.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/tonyTops/top2.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/tonyTops/top2.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/tonyTops/top2.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/tonyTops/top2.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/tonyTops/top2.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/tonyTops/top2.jpg"></div>
-										<noscript>
-											<img src="img/gallery/tonyTops/top2.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>								
-								
-								<li>
-									<div data-alt="img01" data-description="<h3>Mercenary<br>$40</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/berksTops/top4.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/berksTops/top4.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/berksTops/top4.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/berksTops/top4.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/berksTops/top4.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/berksTops/top4.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/berksTops/top4.jpg"></div>
-										<noscript>
-											<img src="img/gallery/berksTops/top4.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Shutter Fade<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/nateTops/top3.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/nateTops/top3.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/nateTops/top3.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/nateTops/top3.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/nateTops/top3.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/nateTops/top3.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/nateTops/top3.jpg"></div>
-										<noscript>
-											<img src="img/gallery/nateTops/top3.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>								
+						<img alt="Bourbon Street" src="img/gallery/codyTops/top1.jpg"
+						data-image="img/gallery/codyTops/top1.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top3.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top3.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top3.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top3.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top3.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top3.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top3.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top3.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>								
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade Pompadour<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/thordyTops/top3.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/thordyTops/top3.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/thordyTops/top3.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/thordyTops/top3.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/thordyTops/top3.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/thordyTops/top3.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/thordyTops/top3.jpg"></div>
-										<noscript>
-											<img src="img/gallery/thordyTops/top3.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								
-								<li>
-									<div data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/tonyTops/top3.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/tonyTops/top3.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/tonyTops/top3.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/tonyTops/top3.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/tonyTops/top3.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/tonyTops/top3.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/tonyTops/top3.jpg"></div>
-										<noscript>
-											<img src="img/gallery/tonyTops/top3.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>							
-
+						<img alt="Crab Hunting" src="img/gallery/thordyTops/top1.jpg"
+						data-image="img/gallery/thordyTops/top1.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+						<!--End Top One-->
 						
+						<!--Begin Top Two-->
+						<img alt="Bourbon Street" src="img/gallery/berksTops/top2.jpg"
+						data-image="img/gallery/berksTops/top2.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
+						<img alt="Crab Hunting" src="img/gallery/nateTops/top2.jpg"
+						data-image="img/gallery/nateTops/top2.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+	
+						<img alt="Ship Island" src="img/gallery/tonyTops/top2.jpg"
+						data-image="img/gallery/tonyTops/top2.jpg"
+						data-description="Take a trip to the famous Ship Island">
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade Flat Top<br>$25</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/nateTops/top4.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/nateTops/top4.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/nateTops/top4.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/nateTops/top4.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/nateTops/top4.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/nateTops/top4.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/nateTops/top4.jpg"></div>
-										<noscript>
-											<img src="img/gallery/nateTops/top4.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Curly Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/nateTops/top5.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/nateTops/top5.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/nateTops/top5.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/nateTops/top5.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/nateTops/top5.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/nateTops/top5.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/nateTops/top5.jpg"></div>
-										<noscript>
-											<img src="img/gallery/nateTops/top5.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-							
+						<img alt="Bourbon Street" src="img/gallery/codyTops/top2.jpg"
+						data-image="img/gallery/codyTops/top2.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade w/ Side Part<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top4.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top4.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top4.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top4.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top4.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top4.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top4.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top4.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade w/ Freestyle Design<br>$25</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top5.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Undercut w/ style out<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top6.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top6.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top6.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top6.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top6.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top6.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top6.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top6.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Taper<br>$15</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top8.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top8.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top8.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top8.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top8.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top8.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top8.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top8.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Skin Tight w/ Curly Top<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top7.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top7.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top7.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top7.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top7.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top7.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top7.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top7.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
+						<img alt="Crab Hunting" src="img/gallery/thordyTops/top2.jpg"
+						data-image="img/gallery/thordyTops/top2.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+						<!--End Top Two-->		
+						
+						<!--Begin Top Three-->
+						<img alt="Bourbon Street" src="img/gallery/berksTops/top3.jpg"
+						data-image="img/gallery/berksTops/top3.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
+						<img alt="Crab Hunting" src="img/gallery/nateTops/top3.jpg"
+						data-image="img/gallery/nateTops/top3.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+	
+						<img alt="Ship Island" src="img/gallery/tonyTops/top3.jpg"
+						data-image="img/gallery/tonyTops/top3.jpg"
+						data-description="Take a trip to the famous Ship Island">
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Temple Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/thordyTops/top4.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/thordyTops/top4.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/thordyTops/top4.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/thordyTops/top4.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/thordyTops/top4.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/thordyTops/top4.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/thordyTops/top4.jpg"></div>
-										<noscript>
-											<img src="img/gallery/thordyTops/top4.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Simple Design<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/thordyTops/top5.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/thordyTops/top5.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/thordyTops/top5.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/thordyTops/top5.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/thordyTops/top5.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/thordyTops/top5.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/thordyTops/top5.jpg"></div>
-										<noscript>
-											<img src="img/gallery/thordyTops/top5.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Night Crawlers<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/thordyTops/top6.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/thordyTops/top6.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/thordyTops/top6.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/thordyTops/top6.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/thordyTops/top6.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/thordyTops/top6.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/thordyTops/top6.jpg"></div>
-										<noscript>
-											<img src="img/gallery/thordyTops/top6.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
+						<img alt="Bourbon Street" src="img/gallery/codyTops/top3.jpg"
+						data-image="img/gallery/codyTops/top3.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
+						<img alt="Crab Hunting" src="img/gallery/thordyTops/top3.jpg"
+						data-image="img/gallery/thordyTops/top3.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+						<!--End Top Three-->
 
-								<li>
-									<div data-alt="img01" data-description="<h3>Assemblage</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/tonyTops/top4.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/tonyTops/top4.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/tonyTops/top4.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/tonyTops/top4.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/tonyTops/top4.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/tonyTops/top4.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/tonyTops/top4.jpg"></div>
-										<noscript>
-											<img src="img/gallery/tonyTops/top4.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								
-																								
-								<li>
-									<div data-alt="img01" data-description="<h3>Low Taper<br>$20</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/berksTops/top5.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/berksTops/top5.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/berksTops/top5.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/berksTops/top5.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/berksTops/top5.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/berksTops/top5.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/berksTops/top5.jpg"></div>
-										<noscript>
-											<img src="img/gallery/berksTops/top5.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
-								<li>
-									<div data-alt="img01" data-description="<h3>Faded Mohawk<br>$30</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/berksTops/top6.jpg" data-min-width="1300"></div>
-										<div data-src="img/gallery/berksTops/top6.jpg" data-min-width="1000"></div>
-										<div data-src="img/gallery/berksTops/top6.jpg" data-min-width="700"></div>
-										<div data-src="img/gallery/berksTops/top6.jpg" data-min-width="300"></div>
-										<div data-src="img/gallery/berksTops/top6.jpg" data-min-width="200"></div>
-										<div data-src="img/gallery/berksTops/top6.jpg" data-min-width="140"></div>
-										<div data-src="img/gallery/berksTops/top6.jpg"></div>
-										<noscript>
-											<img src="img/gallery/berksTops/top6.jpg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>
+						<!--Begin Top Four-->
+						<img alt="Bourbon Street" src="img/gallery/berksTops/top4.jpg"
+						data-image="img/gallery/berksTops/top4.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
 
-							</ul>
-							<div class="gamma-overlay"></div>
-							<div id="loadmore" class="loadmore">Example for loading more items...</div>
-						</div>
+						<img alt="Crab Hunting" src="img/gallery/nateTops/top4.jpg"
+						data-image="img/gallery/nateTops/top4.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+	
+						<img alt="Ship Island" src="img/gallery/tonyTops/top4.jpg"
+						data-image="img/gallery/tonyTops/top4.jpg"
+						data-description="Take a trip to the famous Ship Island">
+
+						<img alt="Bourbon Street" src="img/gallery/codyTops/top4.jpg"
+						data-image="img/gallery/codyTops/top4.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
+
+						<img alt="Crab Hunting" src="img/gallery/thordyTops/top4.jpg"
+						data-image="img/gallery/thordyTops/top4.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+						<!--End Top Four-->		
+
+						<!--Begin Top Five-->
+						<img alt="Bourbon Street" src="img/gallery/berksTops/top5.jpg"
+						data-image="img/gallery/berksTops/top5.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
+
+						<img alt="Crab Hunting" src="img/gallery/nateTops/top5.jpg"
+						data-image="img/gallery/nateTops/top5.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+	
+						<img alt="Ship Island" src="img/gallery/tonyTops/top5.jpg"
+						data-image="img/gallery/tonyTops/top5.jpg"
+						data-description="Take a trip to the famous Ship Island">
+
+						<img alt="Bourbon Street" src="img/gallery/codyTops/top5.jpg"
+						data-image="img/gallery/codyTops/top5.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
+
+						<img alt="Crab Hunting" src="img/gallery/thordyTops/top5.jpg"
+						data-image="img/gallery/thordyTops/top5.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+						<!--End Top Five-->	
+						
+						<!--Begin Top Six-->
+						<img alt="Bourbon Street" src="img/gallery/berksTops/top6.jpg"
+						data-image="img/gallery/berksTops/top6.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
+	
+						<img alt="Ship Island" src="img/gallery/tonyTops/top6.jpg"
+						data-image="img/gallery/tonyTops/top6.jpg"
+						data-description="Take a trip to the famous Ship Island">
+
+						<img alt="Bourbon Street" src="img/gallery/codyTops/top6.jpg"
+						data-image="img/gallery/codyTops/top6.jpg"
+						data-description="Take a trip down to Bourbon Street in New Orleans.">
+
+						<img alt="Crab Hunting" src="img/gallery/thordyTops/top6.jpg"
+						data-image="img/gallery/thordyTops/top6.jpg"
+						data-description="Take some time out of your day to relax on the beach and enjoy the sun.">
+						<!--End Top Six-->
+					</div>				
 					</div>
-				</div>
+				</div>	
 			</div>
-		
 		</div>
-		
-		
-		
-
-
 
 		<!--Facts Section-->
-	<section id="" class="page  bg-style1 text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/profileCopy.jpg);">
+	<section id="" class="page bg-style1 text-white parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/profileCopy.jpg);">
 		<div class="container-fluid">
 			<div class="row"> 
 				<div class="col-md-12">
@@ -702,7 +438,7 @@
 	
 	
 <!--End of Fun Facts-->
-		<div class="container-fluid">
+		<div class="page container-fluid">
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
@@ -712,9 +448,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="container-fluid text-center">
-			<div class="row"> 
+			<div class="row text-center"> 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 					<div class="pricing">
 						<ul>
@@ -776,8 +510,6 @@
 									<button type="button" class="btn btn-primary">Try a Week</button>
 								</div>
 							</li>
-							
-
 						</ul>
 					</div>
 				</div>
@@ -791,7 +523,7 @@
 			
 
 		 <!-- Begin testimonials -->
-		 <section id="testimonial-section">
+		 <section class="page" id="testimonial-section">
             <div id="testimonial-trigger" class="container-fluid testimonial parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/champ.jpg);"> 
 				<div class="row"> 
 					<div class="col-md-12">
@@ -803,7 +535,7 @@
 					</div>
 				</div>
 				<div class="row center-block text-center">
-					<div class="col-md-12">
+					<div class="col-md-offset-3 col-md-6">
 						<div id="owl-testimonial" class="owl-carousel owl-theme ">
 							<div class="item">
 								<blockquote>
@@ -841,7 +573,7 @@
 		</section>
 		
 		<!--Begin Join US Section-->
-		<div class="container-fluid">
+		<div class="page container-fluid ">
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
@@ -864,73 +596,116 @@
 		<!--End Join US Section-->
 		
 		<!--Begin Contact Section-->
-		<section id="contact-section" class=" page parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-image-copy.jpg) ;background-size:100% auto;"> 
-		<div class="front fontwhite">         
-			<div class="container-fluid">
-				<div class="row"> 
-					<div class="col-md-12">
-						<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
-							<h2>Contacts</h2>
-							<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-								<p class="subtitle">Reach out to us</p>
+		<section id="page contact-section" class=" page parallax" data-stellar-background-ratio="0.5" style="background-image: url(img/map-image-copy.jpg) ;background-size:100% auto;"> 
+			<div class="front fontwhite">         
+				<div class="container-fluid">
+					<div class="row"> 
+						<div class="col-md-12">
+							<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+								<h2>Contacts</h2>
+								<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+									<p class="subtitle">Reach out to us</p>
+							</div>
 						</div>
 					</div>
-				</div>
 			
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="contact-info">
-							<h4>Our Address</h4>
-							<ul class="contact-address">
-								<li><a href="https://www.google.com/maps/place/906+L+St,+Lincoln,+NE+68508/@40.8103167,-96.7083861,17z/data=!4m7!1m4!3m3!1s0x8796bf0239402d5b:0x81821f78aae9fc22!2s906+L+St,+Lincoln,+NE+68508!3b1!3m1!1s0x8796bf0239402d5b:0x81821f78aae9fc22"><i class="fa fa-map-marker fa-lg"></a></i>&nbsp; 906 L St,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lincoln, Nebraska<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 68508, USA</li>
-								<li><a href="tel:1-402-261-4583"><i class="fa fa-phone"></a></i>&nbsp; 1-402-261-4583</li>
-								<li><a href="berks@berksbarbershop.com"><i class="fa fa-envelope"></a></i> berks@berksbarbershop.com</li>
+					<div class="row">
+						<div class="col-sm-6">
+							<div class="contact-info">
+								<h4>Our Address</h4>
+								<ul class="contact-address">
+									<li><a href="https://www.google.com/maps/place/906+L+St,+Lincoln,+NE+68508/@40.8103167,-96.7083861,17z/data=!4m7!1m4!3m3!1s0x8796bf0239402d5b:0x81821f78aae9fc22!2s906+L+St,+Lincoln,+NE+68508!3b1!3m1!1s0x8796bf0239402d5b:0x81821f78aae9fc22"><i class="fa fa-map-marker fa-lg"></a></i>&nbsp; 906 L St,<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lincoln, Nebraska<br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 68508, USA</li>
+									<li><a href="tel:1-402-261-4583"><i class="fa fa-phone"></a></i>&nbsp; 1-402-261-4583</li>
+									<li><a href="berks@berksbarbershop.com"><i class="fa fa-envelope"></a></i> berks@berksbarbershop.com</li>
 					
-							</ul>
-						</div>
-	
-						 <h4>Subscribe</h4>
-						<div id="footer_signup">
-							<div id="email">
-								<form id="subscribe" method="POST" action="inc/subscribe.php">
-									<input type="text" placeholder="Enter email address" name="Email" id="address" data-validate="validate(required, email)"/>
-									<button value='submit' name='Submit' type="submit">Submit</button>
-									<span id="result" class="section-description"></span>
-								</form> 
+								</ul>
 							</div>
+	
+							 <h4>Subscribe</h4>
+							<div id="footer_signup">
+								<div id="email">
+									<form id="subscribe" method="POST" action="inc/subscribe.php">
+										<input type="text" placeholder="Enter email address" name="Email" id="address" data-validate="validate(required, email)"/>
+										<button value='submit' name='Submit' type="submit">Submit</button>
+										<span id="result" class="section-description"></span>
+									</form> 
+								</div>
+							</div> 
+							<p>Jump on our mailing list to receive special offers and notification of upcoming events</p> 
 						</div> 
-						<p>Jump on our mailing list to receive special offers and notification of upcoming events</p> 
-					</div> 
-					<?=$thankYou ?>
-					<div class="col-sm-6">
-						<div class="contact-form">
-							<h4>Write to us</h4>
-							<form method="post" action="inc/email.php" role="form">
-								<div class="form-group">
-									<input name="sender" type="text" class="form-control input-lg" placeholder="Your Name" required>
-								</div>
-								<div class="form-group">
-									<input name="senderEmail" type="email" class="form-control input-lg" placeholder="E-mail" required>
-								</div>
-								<div class="form-group">
-									<input name="subject" type="text" class="form-control input-lg" placeholder="Subject" required>
-								</div>
-								<div class="form-group">
-									<textarea name="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
-								</div>
-								<button type="submit" name="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
-							</form>
-						</div>	
-					</div>                                                          
-				</div> <!-- /.row -->
-			<!--End Contact Section-->
-			</div>
+						<?=$thankYou ?>
+						<div class="col-sm-6">
+							<div class="contact-form">
+								<h4>Write to us</h4>
+								<form method="post" action="inc/email.php" role="form">
+									<div class="form-group">
+										<input name="sender" type="text" class="form-control input-lg" placeholder="Your Name" required>
+									</div>
+									<div class="form-group">
+										<input name="senderEmail" type="email" class="form-control input-lg" placeholder="E-mail" required>
+									</div>
+									<div class="form-group">
+										<input name="subject" type="text" class="form-control input-lg" placeholder="Subject" required>
+									</div>
+									<div class="form-group">
+										<textarea name="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+									</div>
+									<button type="submit" name="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+								</form>
+							</div>	
+						</div>                                                          
+					</div> <!-- /.row -->
+				<!--End Contact Section-->
+				</div>
 			</div>   
 		</section>
 		
+			<!--Begin Join US Section-->
+		<div class="page container-fluid ">
+			<div class="row"> 
+				<div class="col-md-12">
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Leave Us a Comment</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Use Facebook or Google+ </p>
+					</div>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="col-md-offset-2 col-md-8">
+				
+				<!--
+					<div id="disqus_thread"></div>
+					<script>
+					/**
+					* RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+					* LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables
+					*/
+					
+					var disqus_config = function () {
+					this.page.url = PAGE_URL; // Replace PAGE_URL with your page's canonical URL variable
+					this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+					};
+					
+					(function() { // DON'T EDIT BELOW THIS LINE
+					var d = document, s = d.createElement('script');
+
+					s.src = '//berksbarbershop.disqus.com/embed.js';
+
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+					})();
+					</script>
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+                -->
+                </div>
+			</div>
+		</div>
+		<!--End Join US Section-->
+			
 
     <!-- Footer -->
-      <div id= "footer" class="example">
+      <div id= "footer" class="page example">
       	<div class=container-fluid>
 			<div class="row">
 			  <div class="col-md-12">
@@ -972,27 +747,33 @@
 
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script>
-		$(document).ready(function() {
-		  $("#owl-intro-text").owlCarousel({
-				navigation : false, // Show next and prev buttons
-				autoPlay : 3000,
-       			slideSpeed : 300,
-        		paginationSpeed : 400,
-        		singleItem:true
-		  });
-		});
-	</script>
 
-	
+<script>
+            $(document).ready(function() {
+              var owl = $('.owl-carousel');
+              owl.owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 10,
+                autoplay: true,
+                autoplayTimeout: 4000,
+                autoplayHoverPause: false
+              });
+              $('.play').on('click', function() {
+                owl.trigger('play.owl.autoplay', [1000])
+              })
+              $('.stop').on('click', function() {
+                owl.trigger('stop.owl.autoplay')
+              })
+            })
+</script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     
-    <!--Vide fullscreen Video-->
-    <script src="vide/src/jquery.vide.js"></script>
   
     <!--Animations for text-->
     <script src="bower_components/wow/dist/wow.min.js"></script>
+    
     <script>
 		new WOW().init();
     </script>
@@ -1010,87 +791,40 @@
     </script>
     
 
-			<!--Gamma Gallery -->
-		<script src="GammaGallery/js/jquery.masonry.min.js"></script>
-		<script src="GammaGallery/js/jquery.history.js"></script>
-		<script src="GammaGallery/js/js-url.min.js"></script>
-		<script src="GammaGallery/js/jquerypp.custom.js"></script>
-		<script src="GammaGallery/js/gamma.js"></script>
-		
-		<script type="text/javascript">
-			
-			$(function() {
-
-				var GammaSettings = {
-						// order is important!
-						viewport : [ {
-							width : 1200,
-							columns : 5
-						}, {
-							width : 900,
-							columns : 4
-						}, {
-							width : 500,
-							columns : 3
-						}, { 
-							width : 320,
-							columns : 2
-						}, { 
-							width : 0,
-							columns : 2
-						} ]
-				};
-
-				Gamma.init( GammaSettings, fncallback );
-				
-				
-								var page = 0,
-					items = ['<li>
-									<div data-alt="img01" data-description="<h3>Skin Fade w/ Freestyle Design<br>$25</h3>" data-max-width="1800" data-max-height="2400">
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="1300"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="1000"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="700"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="300"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="200"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg" data-min-width="140"></div>
-										<div data-src="img/gallery/codyTops/top5.jpeg"></div>
-										<noscript>
-											<img src="img/gallery/codyTops/top5.jpeg" alt="img01"/>
-										</noscript>
-									</div>
-								</li>']
-
-				function fncallback() {
-
-					$( '#loadmore' ).show().on( 'click', function() {
-
-						++page;
-						var newitems = items[page-1]
-						if( page <= 1 ) {
-							
-							Gamma.add( $( newitems ) );
-
-						}
-						if( page === 1 ) {
-
-							$( this ).remove();
-
-						}
-
-					} );
-
-				}
-			});
-
-		</script>	
-
 
 	<!-- Bootflat's JS files.-->
 	<script src="bower_components/Bootflat/bootflat/js/icheck.min.js"></script>
 	<script src="bower_components/Bootflat/bootflat/js/jquery.fs.selecter.min.js"></script>
 	<script src="bower_components/Bootflat/bootflat/js/jquery.fs.stepper.min.js"></script>
 	
+		
+	<!--Gallery--> 
+	<script type="text/javascript"> 
+		jQuery(document).ready(function(){ 
+			jQuery("#gallery").unitegallery({
+				tiles_type:"nested"
+			});
+		}); 
+	</script>
+	
+	<script>
+		$(document).ready(function () {
+
+			$(".player").mb_YTPlayer();
+
+		});
+	</script>
+	
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+    
 	</body>
 	
-	      
+	
 </html>
