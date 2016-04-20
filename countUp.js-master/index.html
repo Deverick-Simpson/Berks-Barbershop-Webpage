@@ -1,0 +1,55 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="description" content="A javascript class that animates a numerical value by counting to it.">
+
+    <title>CountUp.js</title>
+
+
+    <script type="text/javascript" src="dist/countUp.js"></script>
+
+</head>
+
+<body>
+
+        <section>
+            <h1 class="jumbo" id="myTargetElement"></h1>
+        </section>
+
+
+</body>
+<script type="text/javascript">
+
+    // set CountUp options
+    // you don't need to do this - you can use the default options
+    var useOnComplete = false,
+        useEasing = true,
+        easingFn = null,
+        useGrouping = true,
+        options = {
+            useEasing : useEasing, // toggle easing
+            easingFn : easingFn, // defaults to easeOutExpo, but you can specify your own
+            useGrouping : useGrouping, // 1,000,000 vs 1000000
+            separator : ',', // character to use as a separator
+            decimal : '.', // character to use as a decimal
+        };
+
+    var demo;
+
+    // create instance
+    window.onload = function() {
+        // setup CountUp object
+        demo = new CountUp('myTargetElement', 0, 94.62, 2, 2.5, options);
+
+        demo.start();
+
+    };
+
+
+    </script>
+</html>
