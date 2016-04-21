@@ -1,107 +1,3 @@
-/* ===== Begin rotate boxes ===== */
-/* Begin rotate box-1 */
-.rotate-box-1, .rotate-box-2 {
-	display: inline-block;
-	margin: 30px 0;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-a.rotate-box-1, a.rotate-box-2 {
-	text-decoration: none;
-	color: #FFF;
-}
-
-a.rotate-box-1:hover, a.rotate-box-2:hover {
-	color: #e7e7e7;
-}
-
-.rotate-box-1 .rotate-box-icon {
-	display: inline-block;
-	text-align: center;
-	margin-bottom: 15px;
-	margin-right: 25px;
-	margin-top: 10px;
-	float:left;
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
-	width: 45px;
-	height: 45px;
-	line-height: 45px;
-	color: #FFF !important;
-	font-size: 18px;
-	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
-}
-
-.rotate-box-1.square-icon .rotate-box-icon:after, .rotate-box-2.square-icon .rotate-box-icon:after {
-	content: "";
-	position: absolute;
-	top: 3px;
-	right: 3px;
-	bottom: 3px;
-	left: 3px;
-	border: 2px solid #FFF;
-}
-
-.rotate-box-1:hover.square-icon .rotate-box-icon , .rotate-box-2:hover.square-icon .rotate-box-icon{
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-
-.rotate-box-1.square-icon .rotate-box-icon .fa, .rotate-box-2.square-icon .rotate-box-icon .fa{
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
-
-.rotate-box-1:hover.square-icon .rotate-box-icon .fa, .rotate-box-2:hover.square-icon .rotate-box-icon .fa{
-	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
-}
-
-.rotate-box-1 .rotate-box-info a, .rotate-box-2 .rotate-box-info a {
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
-}
-
-.rotate-box-1 h4, .rotate-box-2 h4 {
-	font-weight: 400;
-}
-
-.rotate-box-1 p {
-	padding: 0 10px;
-}
-
-.rotate-box-1 .rotate-box-info {
-	padding-left: 60px;
-}
-/* End rotate box-1 */
-
 /*Begin Navbar*/
 .navbar-custom {
     margin-bottom: 0;
@@ -266,9 +162,6 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 /*End Image hover text for Bio*/
 
 
-
-
-
 /*Video Overlay*/
 video#bgvid { 
     position: absolute;
@@ -283,7 +176,7 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(video/berksCompressed.jpg) no-repeat;
+    background: url(../video/berksCompressed.jpg) no-repeat;
     background-size: cover; 
 }
 
@@ -291,13 +184,162 @@ video { display: block; }
 
 @media screen and (max-device-width: 800px) {
     html {
-         background: url(video/berksCompressed.jpg) #000 no-repeat center center fixed;
+         background: url(../video/berksCompressed.jpg) #000 no-repeat center center fixed;
     }
     #bgvid {
         display: none;
     }
 }
 /*End Video Overlay*/
+
+/* ===== Begin rotate boxes ===== */
+/* Begin rotate box-1 */
+.rotate-box-1, .rotate-box-2 {
+	display: inline-block;
+	margin: 30px 0;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+a.rotate-box-1, a.rotate-box-2 {
+	text-decoration: none;
+	color: #FFF;
+}
+
+a.rotate-box-1:hover, a.rotate-box-2:hover {
+	color: #e7e7e7;
+}
+
+.rotate-box-1 .rotate-box-icon {
+	display: inline-block;
+	text-align: center;
+	margin-bottom: 15px;
+	margin-right: 25px;
+	margin-top: 10px;
+	float:left;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.rotate-box-1.square-icon .rotate-box-icon, .rotate-box-2.square-icon .rotate-box-icon {
+	width: 45px;
+	height: 45px;
+	line-height: 45px;
+	color: #FFF !important;
+	font-size: 18px;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+.rotate-box-1.square-icon .rotate-box-icon:after, .rotate-box-2.square-icon .rotate-box-icon:after {
+	content: "";
+	position: absolute;
+	top: 3px;
+	right: 3px;
+	bottom: 3px;
+	left: 3px;
+	border: 2px solid #FFF;
+}
+
+.rotate-box-1:hover.square-icon .rotate-box-icon , .rotate-box-2:hover.square-icon .rotate-box-icon{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.rotate-box-1.square-icon .rotate-box-icon .fa, .rotate-box-2.square-icon .rotate-box-icon .fa{
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+}
+
+.rotate-box-1:hover.square-icon .rotate-box-icon .fa, .rotate-box-2:hover.square-icon .rotate-box-icon .fa{
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.rotate-box-1 .rotate-box-info a, .rotate-box-2 .rotate-box-info a {
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	-ms-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+.rotate-box-1 h4, .rotate-box-2 h4 {
+	font-weight: 400;
+}
+
+.rotate-box-1 p {
+	padding: 0 10px;
+}
+
+.rotate-box-1 .rotate-box-info {
+	padding-left: 60px;
+}
+/* End rotate box-1 */
+
+
+
+
+/*Main Window Carousel Styling*/
+.item h1{
+	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
+  	font-size: 90px;
+  	font-weight: 500;
+}
+.item h3{
+	  "Courier New", Courier, monospace
+	  font-size: 20px;
+	  font-weight: 200;
+
+}
+
+
+
+/*Section Styling*/
+.page {
+  overflow: hidden;
+  background-color: #fff;
+  padding: 3% 0;
+}
+
+
+
+.parallax {
+	position: relative;
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+  	background-size: cover;
+}
+
+
+.alignright {
+	float: right;
+}
+
+#bg-section { min-height: 100vh; }
+
+
 
 .bottom{
 	padding-bottom: 4%;
@@ -343,43 +385,30 @@ h2{
 	font-family: 'Buenard', serif;
 }
 
-/*Main Window Carousel Styling*/
-.item h1{
-	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
-  	font-size: 90px;
-  	font-weight: 500;
-}
-.item h3{
-	  "Courier New", Courier, monospace
-	  font-size: 20px;
-	  font-weight: 200;
-
-}
-
-/*Section Styling*/
-.page {
-  overflow: hidden;
-  background-color: #fff;
-  padding: 3% 0;
-}
-
-.parallax {
-	position: relative;
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-  	background-size: cover;
+.about-background{
+	background: url(../img/profileCopy.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 
-.alignright {
-	float: right;
+.review-background{
+	background: url(../img/champ.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-#bg-section { min-height: 100vh; }
-
-
+.contact-background{
+	background: url(../img/map-image-copy.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 /*Bio Modal*/
 .modalDialog {
     position: fixed;
@@ -432,3 +461,5 @@ h2{
 .close:hover {
     background: #00d9ff;
 }
+
+/*End Bio Modal*/
