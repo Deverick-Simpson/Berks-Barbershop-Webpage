@@ -385,9 +385,10 @@ h2{
 	font-family: 'Buenard', serif;
 }
 
+
 .about-background{
 	background: url(../img/profileCopy.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -396,7 +397,7 @@ h2{
 
 .review-background{
 	background: url(../img/champ.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -404,11 +405,13 @@ h2{
 
 .contact-background{
 	background: url(../img/map-image-copy.jpg) no-repeat center center fixed; 
-  -webkit-background-size: cover;
+	  -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
+
+
 /*Bio Modal*/
 .modalDialog {
     position: fixed;
@@ -461,5 +464,7 @@ h2{
 .close:hover {
     background: #00d9ff;
 }
+
+
 
 /*End Bio Modal*/

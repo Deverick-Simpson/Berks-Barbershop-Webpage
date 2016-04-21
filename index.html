@@ -17,6 +17,7 @@
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		
+		
 		<script type='text/javascript' src='js/jquery.js'></script> 
 
 		<!-- Custom Fonts -->
@@ -66,7 +67,7 @@
  	
 		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
 			<div class="container-fluid">
-				<div class="row>
+				<div class="row">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
 							<i class="fa fa-bars"></i>
@@ -107,21 +108,23 @@
 	<!-- Main jumbotron for a primary marketing message or call to action -->
 	<section id="bg-section">
 		<div class="container-fluid">
-			<div class="row"> 
-				<video autoplay loop poster="video/berksCompressed.jpg" id="bgvid">
-					<source src="video/background.mp4" type="video/mp4">
-				</video>
-				<div  class="col-lg-10 col-lg-offset-1 col-md-12 text-center">			
-					<div id="owl-intro-text" class="owl-carousel">
-						<div class="item text-center">
-							<h1>Berks Barbershop</h1>
-							<h3>Visit Lincoln's finest</h3>
-						</div>
-						<div class="item text-center">
-							<h1>It's just better here</h1>
-							<h3>10am-6pm Tues-Saturday</h3>
-						</div>
-					</div>	
+			<div class="row">
+				<div class="col-lg-12"> 
+					<video autoplay loop poster="video/berksCompressed.jpg" id="bgvid">
+						<source src="video/background.mp4" type="video/mp4">
+					</video>
+					<div  class="col-lg-10 col-lg-offset-1 col-md-12 text-center">			
+						<div id="owl-intro-text" class="owl-carousel">
+							<div class="item text-center">
+								<h1>Berks Barbershop</h1>
+								<h3>Visit Lincoln's finest</h3>
+							</div>
+							<div class="item text-center">
+								<h1>It's just better here</h1>
+								<h3>10am-6pm Tues-Saturday</h3>
+							</div>
+						</div>	
+					</div>
 				</div>
 			</div>
 		</div>
@@ -129,9 +132,9 @@
 
 	<!--Video Section Ends Here-->
 	<section id="team-section" class="page team-section">	
-		<div class="container-fluid  ">
+		<div class="container-fluid">
 			<div class="row"> 
-				<div class="col-md-12">
+				<div class="col-lg-12 col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
 						<h1>Our Team</h1>
 						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
@@ -142,16 +145,22 @@
 			<div class="row">
 				<div class="col-lg-3 col-lg-offset-3 col-md-3 col-md-offset-3 col-sm-3 col-sm-offset-3 col-xs-9 col-xs-offset-3">
 						<!-- normal -->
-						<div class="ih-item circle effect10 top_to_bottom"><a  href="#CoryBio">
-							<div class="img"><img  class="img-fluid img-responsive" src="img/bio/edits/berks2.jpg" alt="Cory Berks"></div>
+						<div class="ih-item circle effect10 top_to_bottom">
+						<a  href="#CoryBio">
+							<div class="img">
+								<img  class="img-fluid img-responsive" src="img/bio/edits/berks2.jpg" alt="Cory Berks">
+							</div>
 							<div class="info">
-							  <h3>Cory Berks</h3>
-							  <p>@BIGBERKS</p>
-							</div></a></div>
+								<h3>Cory Berks</h3>
+							  	<p>@BIGBERKS</p>
+							</div>
+						</a>
+						</div>
 						<!-- end normal -->
 						
 						<div id="CoryBio" class="modalDialog">
-							<div>	<a href="#close" title="Close" class="close">X</a>
+							<div>	
+								<a href="#close" title="Close" class="close">X</a>
 								<div class="container-fluid">
 									<div class="row"> 
 										<div class="col-md-12">
@@ -167,100 +176,101 @@
 											</p>			
 										</div>									
 									</div>
-						
 								</div>
 							</div>
 						</div>
 				</div>
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1 col-sm-3 col-sm-offset-1 col-xs-9 col-xs-offset-3">
-		
-						<!-- normal -->
-						<div class="ih-item circle effect10 top_to_bottom "><a href="#CodyBio">
-							<div class="img"><img  class="img-fluid img-responsive" src="img/bio/edits/codyProfile2.jpg" alt="Cody Hall"></div>
+					<!-- normal -->
+					<div class="ih-item circle effect10 top_to_bottom ">
+						<a href="#CodyBio">
+							<div class="img">
+								<img  class="img-fluid img-responsive" src="img/bio/edits/codyProfile2.jpg" alt="Cody Hall">
+							</div>
 							<div class="info">
-							  <h3>Cody Hall</h3>
-							  <p>@CODYCRISPY</p>
-							</div></a></div>
-						<!-- end normal -->
-						<div id="CodyBio" class="modalDialog">
-							<div>	<a href="#close" title="Close" class="close">X</a>
-								<div class="container-fluid">
-									<div class="row"> 
-										<div class="col-md-12">
-											<h2>Cody Hall</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/edits/codyProfile2.jpg" alt="Cody Hall">
-											<p>I started cutting hair my freshman year of high school when I moved to Omaha from Kansas City. I started cutting my cousins hair and fell in love with it. Since my cousin was my only client at the time I wanted more practice so I started cutting my own hair.</p>
-											<p> After I mastered my own fade and started making a few friends, I started choppin them up too. I grew a really strong passion for cutting hair and everything to do with barbering, so after graduating high school I went straight into barber school.</p>
-											<p> The only barber school in Nebraska was here in Lincoln so I commuted back and fourth from Omaha. During school, barbershops started seeing my work on social media and started offering me chairs. I finished school in 14 months and started at Berks Barbershop a month later feeling like it was the best spot for me. Specializing in fades and tapers come sit in my chair and get crispy. #BBS</p>
-										</div>
+								<h3>Cody Hall</h3>
+								<p>@CODYCRISPY</p>
+							</div>
+						</a>
+					</div>
+					<!-- end normal -->
+					<div id="CodyBio" class="modalDialog">
+						<div>	<a href="#close" title="Close" class="close">X</a>
+							<div class="container-fluid">
+								<div class="row"> 
+									<div class="col-md-12">
+										<h2>Cody Hall</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/edits/codyProfile2.jpg" alt="Cody Hall">
+										<p>I started cutting hair my freshman year of high school when I moved to Omaha from Kansas City. I started cutting my cousins hair and fell in love with it. Since my cousin was my only client at the time I wanted more practice so I started cutting my own hair.</p>
+										<p> After I mastered my own fade and started making a few friends, I started choppin them up too. I grew a really strong passion for cutting hair and everything to do with barbering, so after graduating high school I went straight into barber school.</p>
+										<p> The only barber school in Nebraska was here in Lincoln so I commuted back and fourth from Omaha. During school, barbershops started seeing my work on social media and started offering me chairs. I finished school in 14 months and started at Berks Barbershop a month later feeling like it was the best spot for me. Specializing in fades and tapers come sit in my chair and get crispy. #BBS</p>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-9 col-xs-offset-3">
-						<!-- normal -->
-						<div class="ih-item circle effect10 top_to_bottom"><a href="#TonyBio">
-							<div class="img"><img  class="img-fluid img-responsive" src="img/bio/tonyCover.jpg" alt="Tony Parker"></div>
-							<div class="info">
-							  <h3>Tony Parker</h3>
-							  <p>@YUNGTONY</p>
-							</div></a></div>
-						<!-- end normal -->
-						<div id="TonyBio" class="modalDialog">
-							<div>	<a href="#close" title="Close" class="close">X</a>
-								<div class="container-fluid">
-									<div class="row"> 
-										<div class="col-md-12">
-											<h2>Tony Parker</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/tonyCover.jpg" alt="Tony Parker">
-											<p>I'm a 25 year old Kansas City native and As a barber I couldn't ask for a better career! I became interested in barbering at the age of 13. I decided to attend the college of hair design June 4th, 2012 and graduated October 31st, 2013.</p><p> I started my career at True Skills barbershop shortly after graduation before joining Berks barbershop. I specialize in bald fades, taper fades, flattops, comb overs etc. you name it and I'll cut it. </p>
-										</div>
+					<!-- normal -->
+					<div class="ih-item circle effect10 top_to_bottom"><a href="#TonyBio">
+						<div class="img"><img  class="img-fluid img-responsive" src="img/bio/tonyCover.jpg" alt="Tony Parker"></div>
+						<div class="info">
+						  <h3>Tony Parker</h3>
+						  <p>@YUNGTONY</p>
+						</div></a></div>
+					<!-- end normal -->
+					<div id="TonyBio" class="modalDialog">
+						<div>	<a href="#close" title="Close" class="close">X</a>
+							<div class="container-fluid">
+								<div class="row"> 
+									<div class="col-md-12">
+										<h2>Tony Parker</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/tonyCover.jpg" alt="Tony Parker">
+										<p>I'm a 25 year old Kansas City native and As a barber I couldn't ask for a better career! I became interested in barbering at the age of 13. I decided to attend the college of hair design June 4th, 2012 and graduated October 31st, 2013.</p><p> I started my career at True Skills barbershop shortly after graduation before joining Berks barbershop. I specialize in bald fades, taper fades, flattops, comb overs etc. you name it and I'll cut it. </p>
 									</div>
 								</div>
 							</div>
 						</div>
+					</div>
 				</div>
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-9 col-xs-offset-3">
-						<!-- normal -->
-						<div class="ih-item circle effect10 top_to_bottom"><a href="#MattBio">
-							<div class="img"><img  class="img-fluid img-responsive" src="img/bio/edits/thordyCover.jpg" alt="Matt Thornton"></div>
-							<div class="info">
-							  <h3>Matt Thornton</h3>
-							  <p>@MTCUTS</p>
-							</div></a></div>
-						<!-- end normal -->
-						<div id="MattBio" class="modalDialog">
-							<div>	<a href="#close" title="Close" class="close">X</a>
-								<h2>Matt Thornton</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/edits/thordyCover.jpg" alt="Matt Thornton">
-									<p>I'm a 25 year old Kansas City native and As a barber I couldn't ask for a better career! I became interested in barbering at the age of 13. I decided to attend the college of hair design June 4th, 2012 and graduated October 31st, 2013.</p><p> I started my career at True Skills barbershop shortly after graduation before joining Berks barbershop. I specialize in bald fades, taper fades, flattops, comb overs etc. you name it and I'll cut it. </p>
-									<p>WAITING FOR YOUR BIO</p>
-									<p>WAITING FOR YOUR BIO</p>
-									<p>WAITING FOR YOUR BIO</p>
-							</div>
+					<!-- normal -->
+					<div class="ih-item circle effect10 top_to_bottom"><a href="#MattBio">
+						<div class="img"><img  class="img-fluid img-responsive" src="img/bio/edits/thordyCover.jpg" alt="Matt Thornton"></div>
+						<div class="info">
+						  <h3>Matt Thornton</h3>
+						  <p>@MTCUTS</p>
+						</div></a></div>
+					<!-- end normal -->
+					<div id="MattBio" class="modalDialog">
+						<div>	<a href="#close" title="Close" class="close">X</a>
+							<h2>Matt Thornton</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/edits/thordyCover.jpg" alt="Matt Thornton">
+								<p>I'm a 25 year old Kansas City native and As a barber I couldn't ask for a better career! I became interested in barbering at the age of 13. I decided to attend the college of hair design June 4th, 2012 and graduated October 31st, 2013.</p><p> I started my career at True Skills barbershop shortly after graduation before joining Berks barbershop. I specialize in bald fades, taper fades, flattops, comb overs etc. you name it and I'll cut it. </p>
+								<p>WAITING FOR YOUR BIO</p>
+								<p>WAITING FOR YOUR BIO</p>
+								<p>WAITING FOR YOUR BIO</p>
 						</div>
+					</div>
 				</div>
 				<div class="col-lg-3 col-lg-offset-1 col-md-3 col-md-offset-1  col-sm-3 col-sm-offset-1 col-xs-9 col-xs-offset-3">
-						<!-- normal -->
-						<div class="ih-item circle effect10 top_to_bottom"><a href="#NateBio">
-							<div class="img"><img  class="img-fluid img-responsive" src="img/bio/nateCover.jpg" alt="Nate Berks"></div>
-							<div class="info">
-							  <h3>Nate Berks</h3>
-							  <p>@NATEGETTINIT</p>
-							</div></a></div>
-						<!-- end normal -->
-						<div id="NateBio" class="modalDialog">
-							<div>	<a href="#close" title="Close" class="close">X</a>
-								<h2>Nate Berks</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/nateCover.jpg" alt="Nate Berks">
-								<p>Through a business proposition and even more brotherly persuasion, I'm the second brother that contributed to molding Berks Barber Shop into what it is today. I established a passion for cutting hair through watching veterans when I was younger and practicing my own craft on fellow classmates when in high school. I moved forward in barbering to College of Hair Design where I honed my craft to become the barber I am today. After collaborating my new style with my older brothers already established clientele Berks Barber Shop was born.
-									I specialize in fades and freestyle designs.</p>
-								<p> My favorite thing to accomplish day in and day out is a way of transformation through my clients hair and personal appearance. Taking a large amount of hair off or completely changing someone's appearance around to give them the haircut that they've always been searching for is what's important and fun to me. Making someone feel good on the inside after leaving Berks Barber Shop is what makes barbering and amazing trait for me. My attention to detail and customer appreciation keeps my clients returning with family and friends as well.</p>
-							</div>
+					<!-- normal -->
+					<div class="ih-item circle effect10 top_to_bottom"><a href="#NateBio">
+						<div class="img"><img  class="img-fluid img-responsive" src="img/bio/nateCover.jpg" alt="Nate Berks"></div>
+						<div class="info">
+						  <h3>Nate Berks</h3>
+						  <p>@NATEGETTINIT</p>
+						</div></a></div>
+					<!-- end normal -->
+					<div id="NateBio" class="modalDialog">
+						<div>	<a href="#close" title="Close" class="close">X</a>
+							<h2>Nate Berks</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/nateCover.jpg" alt="Nate Berks">
+							<p>Through a business proposition and even more brotherly persuasion, I'm the second brother that contributed to molding Berks Barber Shop into what it is today. I established a passion for cutting hair through watching veterans when I was younger and practicing my own craft on fellow classmates when in high school. I moved forward in barbering to College of Hair Design where I honed my craft to become the barber I am today. After collaborating my new style with my older brothers already established clientele Berks Barber Shop was born.
+								I specialize in fades and freestyle designs.</p>
+							<p> My favorite thing to accomplish day in and day out is a way of transformation through my clients hair and personal appearance. Taking a large amount of hair off or completely changing someone's appearance around to give them the haircut that they've always been searching for is what's important and fun to me. Making someone feel good on the inside after leaving Berks Barber Shop is what makes barbering and amazing trait for me. My attention to detail and customer appreciation keeps my clients returning with family and friends as well.</p>
 						</div>
-				</div>
+					</div>
 				</div>
 			</div>	
-	
 		</div>
 	</section>
 		
@@ -419,12 +429,13 @@
 							data-description="Drop Fade">
 							<!--End Top Six-->
 						</div>				
-						</div>
-					</div>	
+					</div>
+				</div>	
 			</div>
 		</div>
-	</section>						 
-		<!--Facts Section-->
+	</section>		
+					 
+	<!--Facts Section-->
 	<section id="facts-section" class="page text-white about-background">
 		<div class="container-fluid">
 			<div class="row"> 
@@ -463,7 +474,7 @@
 	</section>	<!--End of Fun Facts-->
 	
 	
-<!--End of Fun Facts-->
+	<!--Prices Facts-->
 	<section id="prices-section"  class="page prices-section">		
 		<div class=" container-fluid">
 			<div class="row"> 
@@ -544,49 +555,47 @@
 	
 
 
-	 <section id="testimonial-section" class="page container-fluid review-background parallax" style="background-image: url(img/champ.jpg);background-size:100% auto;">
-		<div id="testimonial-trigger" > 
-			<div class="row"> 
-				<div class="col-md-12">
-					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
-						<h2>Reviews</h2>
-						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-							<p class="subtitle">What people say about us</p>
-					</div>
+	 <section id="testimonial-section" class="page container-fluid review-background">
+		<div class="row"> 
+			<div class="col-md-12">
+				<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+					<h2>Reviews</h2>
+					<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+						<p class="subtitle">What people say about us</p>
 				</div>
 			</div>
-			<div class="row center-block text-center">
-				<div class="col-md-offset-3 col-md-6">
-					<div id="owl-testimonial" class="owl-carousel owl-theme ">
-						<div class="item">
-						
-								<p>"I have been a regular customer of Berks Barbershop since they opened.  They are doing everything right.  Great haircults, priced right, 
-								relaxed atmosphere, and I really like all the barbers.  They are just cool guys.  It's one of Lincoln's secrets but I think the word is pretty much out now."</p>
-								<footer class="fontWhite"><cite title="Source Title" >Lancaster County Treasurer Andy Stebbing</cite></footer>
-						
-						</div>
-						<div class="item">
-							
-								<p>"You guys have the most professional shop in town, that caters to all textures of hair.  Pound for pound the sharpest shop in town"</p>
-								<footer class="fontWhite" ><cite title="Source Title">Olympic Gold Medalist Jordan Burroughs</cite></footer>
-						
-						</div>
-						<div class="item">
-						
-								<p>"I have been a client of Mr.Berks for 6 years. It may seem hard to believe but 
-								 I remember my first haircut from Cory. It was April 17th 2009. It was a Friday. 
-								 I remember because it was an important day for me. 
-								 I was receiving an award from my job at the time. 
-								 As I was waiting in line for my cut, I noticed this new barber doing a design on a guy. 
-								 I observed many things that impressed me. His composure, concentration, and professionalism. 
-								 He wasn't loud, he didn't stop cutting to tell a story, and the end product had more detail and expression than any other I had seen bed. 
-								 I'm not knocking any other barbers but I saw something I felt was better than the rest.
-								  That day I only got a design from him, which everyone at the conference kept asking where I got my haircut. 
-								  Mom has told me many times that "Clothes don't make the man, they make the man look better. Although a haircut makes a man feel better. 
-								  I have personal witnessed many transformations under his blade. No matter color, which there are many, I've seen guys sit down in his chair and transform into Men as they stand up.  ".</p>
-								<footer class="fontWhite"><cite title="Source Title">Marshall Currin</cite></footer>	
-						</div>  
+		</div>
+		<div class="row center-block text-center">
+			<div class="col-md-offset-3 col-md-6">
+				<div id="owl-testimonial" class="owl-carousel owl-theme ">
+					<div class="item">
+					
+							<p>"I have been a regular customer of Berks Barbershop since they opened.  They are doing everything right.  Great haircults, priced right, 
+							relaxed atmosphere, and I really like all the barbers.  They are just cool guys.  It's one of Lincoln's secrets but I think the word is pretty much out now."</p>
+							<footer class="fontWhite"><cite title="Source Title" >Lancaster County Treasurer Andy Stebbing</cite></footer>
+					
 					</div>
+					<div class="item">
+						
+							<p>"You guys have the most professional shop in town, that caters to all textures of hair.  Pound for pound the sharpest shop in town"</p>
+							<footer class="fontWhite" ><cite title="Source Title">Olympic Gold Medalist Jordan Burroughs</cite></footer>
+					
+					</div>
+					<div class="item">
+					
+							<p>"I have been a client of Mr.Berks for 6 years. It may seem hard to believe but 
+							 I remember my first haircut from Cory. It was April 17th 2009. It was a Friday. 
+							 I remember because it was an important day for me. 
+							 I was receiving an award from my job at the time. 
+							 As I was waiting in line for my cut, I noticed this new barber doing a design on a guy. 
+							 I observed many things that impressed me. His composure, concentration, and professionalism. 
+							 He wasn't loud, he didn't stop cutting to tell a story, and the end product had more detail and expression than any other I had seen bed. 
+							 I'm not knocking any other barbers but I saw something I felt was better than the rest.
+							  That day I only got a design from him, which everyone at the conference kept asking where I got my haircut. 
+							  Mom has told me many times that "Clothes don't make the man, they make the man look better. Although a haircut makes a man feel better. 
+							  I have personal witnessed many transformations under his blade. No matter color, which there are many, I've seen guys sit down in his chair and transform into Men as they stand up.  ".</p>
+							<footer class="fontWhite"><cite title="Source Title">Marshall Currin</cite></footer>	
+					</div>  
 				</div>
 			</div>
 		</div>
@@ -594,7 +603,7 @@
 		
 		<!--Begin Join US Section-->
 	<section id="join-section" class="bottom">
-		<div class="container-fluid ">
+		<div class="container-fluid">
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
@@ -615,81 +624,79 @@
 			</div>
 		</div>
 	</section>
-	
-	
-		<!--End Join US Section-->
+	<!--End Join US Section-->
 		
-		<!--Begin Contact Section-->
-		<section id="contact-section" class="contact-section fontwhite page contact-background " >         
-			<div class="container-fluid">
-				<div class="row"> 
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
-						<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
-							<h2>Contacts</h2>
-							<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-								<p class="subtitle">Reach out to us</p>
-						</div>
+	<!--Begin Contact Section-->
+	<section id="contact-section" class="contact-section fontwhite page contact-background">         
+		<div class="container-fluid">
+			<div class="row"> 
+				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
+					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
+						<h2>Contacts</h2>
+						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
+							<p class="subtitle">Reach out to us</p>
 					</div>
 				</div>
-	
-				<div class="row ">
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<div class="contact-info">
-							<h4>Our Address</h4>
-							<ul class="contact-address">
-								<li><a href="https://www.google.com/maps/place/906+L+St,+Lincoln,+NE+68508/@40.8103167,-96.7083861,17z/data=!4m7!1m4!3m3!1s0x8796bf0239402d5b:0x81821f78aae9fc22!2s906+L+St,+Lincoln,+NE+68508!3b1!3m1!1s0x8796bf0239402d5b:0x81821f78aae9fc22"><i class="fa fa-map-marker fa-lg"></a></i> &nbsp;906 L St,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lincoln, Nebraska<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 68508, USA</li>
-								<li><a href="tel:1-402-261-4583"><i class="fa fa-phone"></a></i>&nbsp; 1-402-261-4583</li>
-								<li><a href="bigberks@berksbarbershop.com"><i class="fa fa-envelope"></a></i> bigberks@berksbarbershop.com</li>
-			
-							</ul>
+			</div>
+
+			<div class="row ">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<div class="contact-info">
+						<h4>Our Address</h4>
+						<ul class="contact-address">
+							<li><a href="https://www.google.com/maps/place/906+L+St,+Lincoln,+NE+68508/@40.8103167,-96.7083861,17z/data=!4m7!1m4!3m3!1s0x8796bf0239402d5b:0x81821f78aae9fc22!2s906+L+St,+Lincoln,+NE+68508!3b1!3m1!1s0x8796bf0239402d5b:0x81821f78aae9fc22"><i class="fa fa-map-marker fa-lg"></a></i> &nbsp;906 L St,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Lincoln, Nebraska<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 68508, USA</li>
+							<li><a href="tel:1-402-261-4583"><i class="fa fa-phone"></a></i>&nbsp; 1-402-261-4583</li>
+							<li><a href="bigberks@berksbarbershop.com"><i class="fa fa-envelope"></a></i> bigberks@berksbarbershop.com</li>
+		
+						</ul>
+					</div>
+					<div class="hours-section">
+						<h4>Hours of Operation</h4>
+						<ul class="hours-listing">
+							<li><h6>Tues-Sat 10am-6pm</h6></li>
+						</ul>
+					</div>
+					 <h4>Subscribe</h4>
+					<div id="footer_signup">
+						<div id="email">
+							<form  class="font" id="subscribe" method="POST" action="inc/subscribe.php">
+								<input type="text" placeholder="Enter email address" name="Email" id="address" data-validate="validate(required, email)"/>
+								<button value='submit' name='Submit' type="submit">Submit</button>
+								<span id="result" class="section-description"></span>
+							</form> 
 						</div>
-						<div class="hours-section">
-							<h4>Hours of Operation</h4>
-							<ul class="hours-listing">
-								<li><h6>Tues-Sat 10am-6pm</h6></li>
-							</ul>
-						</div>
-						 <h4>Subscribe</h4>
-						<div id="footer_signup">
-							<div id="email">
-								<form  class="font" id="subscribe" method="POST" action="inc/subscribe.php">
-									<input type="text" placeholder="Enter email address" name="Email" id="address" data-validate="validate(required, email)"/>
-									<button value='submit' name='Submit' type="submit">Submit</button>
-									<span id="result" class="section-description"></span>
-								</form> 
-							</div>
-						</div> 
-						<p>Jump on our mailing list to receive special offers and notification of upcoming events</p> 
 					</div> 
-					<?=$thankYou ?>
-					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-						<div class="contact-form">
-							<h4>Write to us</h4>
-							<form method="POST" action="inc/email.php" role="form">
-								<div class="form-group">
-									<input name="sender" type="text" class="form-control input-lg" placeholder="Your Name" required>
-								</div>
-								<div class="form-group">
-									<input name="senderEmail" type="email" class="form-control input-lg" placeholder="E-mail" required>
-								</div>
-								<div class="form-group">
-									<input name="subject" type="text" class="form-control input-lg" placeholder="Subject" required>
-								</div>
-								<div class="form-group">
-									<textarea name="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
-								</div>
-								<button type="submit" name="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
-							</form>
-						</div>	
-					</div>                                                          
-				</div> <!-- /.row -->
-			<!--End Contact Section-->
-			</div> 
-		</section>
+					<p>Jump on our mailing list to receive special offers and notification of upcoming events</p> 
+				</div> 
+				<?=$thankYou ?>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+					<div class="contact-form">
+						<h4>Write to us</h4>
+						<form method="POST" action="inc/email.php" role="form">
+							<div class="form-group">
+								<input name="sender" type="text" class="form-control input-lg" placeholder="Your Name" required>
+							</div>
+							<div class="form-group">
+								<input name="senderEmail" type="email" class="form-control input-lg" placeholder="E-mail" required>
+							</div>
+							<div class="form-group">
+								<input name="subject" type="text" class="form-control input-lg" placeholder="Subject" required>
+							</div>
+							<div class="form-group">
+								<textarea name="message" class="form-control input-lg" rows="5" placeholder="Message" required></textarea>
+							</div>
+							<button type="submit" name="submit" class="btn wow bounceInRight" data-wow-delay="0.8s">Send</button>
+						</form>
+					</div>	
+				</div>                                                          
+			</div> <!-- /.row -->
+		<!--End Contact Section-->
+		</div> 
+	</section>
 		
 			<!--Begin Join US Section-->
-	<section id="comment-section " class="page">		
-		<div class=" container-fluid ">
+	<section id="comment-section" class="page">		
+		<div class="container-fluid">
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.4s">
@@ -700,8 +707,7 @@
 				</div>
 			</div>
 			<div class="row"> 
-				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">
-					
+				<div class="col-md-offset-2 col-md-8 col-sm-offset-2 col-sm-8 col-xs-offset-2 col-xs-8">	
 					<div id="disqus_thread"></div>
 					<script>
 					/**
@@ -723,9 +729,7 @@
 					(d.head || d.body).appendChild(s);
 					})();
 					</script>
-					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-       
-			
+					<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>		
                 </div>
 			</div>
 		</div>
@@ -733,44 +737,43 @@
 		<!--End Join US Section-->
 			
 
-    <!-- Footer -->
+	<!-- Footer -->
 	<section id="footer-section ">	
-      <div id="footer" class="page example">
-      	<div class=container-fluid>
-			<div class="row">
-			  <div class="col-md-12">
-				<div class="footer">
-				  <div class="container-fluid">
-					<div class="clearfix">
-					<div class="footer-logo"><a ><img src="img/dasTransparent.png" class="img-responsive" /></a> </div>
-					  <dl class="footer-nav">
-						<dt class="nav-title">ABOUT</dt>
-						<dd class="nav-item"><a href="#page-top" class="page-scroll">The Shop</a></dd>
-						<dd class="nav-item"><a href="#about-section" class="page-scroll">History</a></dd>
-					  </dl>
-					  <dl class="footer-nav">
-						<dt class="nav-title">SOCIAL</dt>
-
-						<dd class="nav-item"><a href="https://www.facebook.com/berksbarber/">Facebook</a></dd>
-					  </dl>
-					  <dl class="footer-nav">
-						<dt class="nav-title">BASIC INFO</dt>
-						<dd class="nav-item"><a href="#gallery-section" class="page-scroll">Gallery</a></dd>
-						<dd class="nav-item"><a href="#prices-section" class="page-scroll">Pricing</a></dd>
-						<dd class="nav-item"><a href="#contact-section" class="page-scroll">Hours and Location</a></dd>
-					  </dl>
-					  <dl class="footer-nav">
-						<dt class="nav-title">CONTACT</dt>
-							<dd class="nav-item"><a href="footer" class="page-scroll"   data-toggle="popover"  title="Cory Berks" data-placement="left" data-content="Email:  <a href='mailto:bigberks@berksbarbershop.com'   title='Email'>bigberks@berksbarbershop.com</a> Phone:<br>  <a href='tel:14022614583'>402-261-4583</a>  " >Barber Shop Owner</a></dd>
-						</dl>
+		<div id="footer" class="page example">
+			<div class=container-fluid>
+				<div class="row">
+					<div class="col-md-12">
+						<div class="footer">
+							<div class="container-fluid">
+								<div class="clearfix">
+									<div class="footer-logo"><a ><img src="img/dasTransparent.png" class="img-responsive" /></a> </div>
+										<dl class="footer-nav">
+											<dt class="nav-title">ABOUT</dt>
+											<dd class="nav-item"><a href="#page-top" class="page-scroll">The Shop</a></dd>
+											<dd class="nav-item"><a href="#about-section" class="page-scroll">History</a></dd>
+										</dl>
+										<dl class="footer-nav">
+											<dt class="nav-title">SOCIAL</dt>
+												<dd class="nav-item"><a href="https://www.facebook.com/berksbarber/">Facebook</a></dd>
+										</dl>
+										<dl class="footer-nav">
+											<dt class="nav-title">BASIC INFO</dt>
+												<dd class="nav-item"><a href="#gallery-section" class="page-scroll">Gallery</a></dd>
+												<dd class="nav-item"><a href="#prices-section" class="page-scroll">Pricing</a></dd>
+												<dd class="nav-item"><a href="#contact-section" class="page-scroll">Hours and Location</a></dd>
+										</dl>
+										<dl class="footer-nav">
+											<dt class="nav-title">CONTACT</dt>
+										</dl>
+									</div>
+									<div class="footer-copyright text-center">Copyright &copy; 2016 Deverick Apollo. All rights reserved.</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="footer-copyright text-center">Copyright &copy; 2016 Deverick Apollo. All rights reserved.</div>
-				  </div>
 				</div>
-			  </div>
-			  </div>
-        </div>
-      </div>
+			</div>
+		</div>
 	</section>
 	
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
