@@ -80,8 +80,21 @@
 /*End NavBar*/
 
 
+/*Bio Image formatting for Mobile*/
+@media (max-width: @screen-sm-min) {  }
 
-/*Image hover text for Bio*/
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) {  }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) {  }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {  }
+
+
+
+/*Bio Images- Hovering effect*/
 
 .hovereffect {
   width: 100%;
@@ -176,18 +189,21 @@ video#bgvid {
     -moz-transform: translateX(-50%) translateY(-50%);
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: url(../video/berksCompressed.jpg) no-repeat;
-    background-size: cover; 
+    background:transparent url(../video/berksCompressed.jpg) no-repeat 0 0;
+    -webkit-background-size:cover; 
+   -moz-background-size:cover; 
+   -o-background-size:cover; 
+   background-size:cover; 
 }
 
 video { display: block; }
 
 @media screen and (max-device-width: 800px) {
-    html {
-         background: url(../video/berksCompressed.jpg) #000 no-repeat center center fixed;
-    }
-    #bgvid {
-        display: none;
+    video#bgvid  {
+         background: url(../video/berksCompressed.jpg) no-repeat 0 0; 
+                 display: none;
+        z-index: -700;
+
     }
 }
 /*End Video Overlay*/
@@ -302,7 +318,7 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 /*Main Window Carousel Styling*/
 .item h1{
 	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
-  	font-size: 90px;
+  	font-size: 80px;
   	font-weight: 500;
 }
 .item h3{
@@ -310,6 +326,12 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	  font-size: 20px;
 	  font-weight: 200;
 
+}
+/*Tablet and Phone adjustment for Title*/
+@media only screen and (max-width: 768px) {
+
+   .item h1{ font-size: 70px; }
+   .item h3{ font-size: 20px; }
 }
 
 
@@ -415,6 +437,8 @@ h2{
 /*Bio Modal*/
 .modalDialog {
     position: fixed;
+    max-height: 100%;
+    overflow-y: auto;
     font-family: Arial, Helvetica, sans-serif;
     top: 0;
     right: 0;
