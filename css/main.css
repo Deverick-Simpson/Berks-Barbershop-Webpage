@@ -79,23 +79,62 @@
 
 /*End NavBar*/
 
+.img{
+  height: auto;
+  max-width: 100%;
+  width: 100%;
+}
 
-/*Bio Image formatting for Mobile*/
-@media (max-width: @screen-sm-min) {  }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: @screen-sm-min) {  }
+/*Video Overlay*/
+video{ 
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  background:transparent url('../video/wideshot.png') no-repeat 0 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-size: 100% 100%;
+  background-repeat:no-repeat;
+} 
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: @screen-md-min) {  }
+/* Removing Apple Play Buttons from Introduction Video for mobile */
+/* This used to work for parent element of button divs */
 
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: @screen-lg-min) {  }
+/* But it is not enough now, below dont hide play button parent div */
+
+*::-webkit-media-controls-panel {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* Old shadow dom for play button */
+
+*::--webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 
 
 
 /*Bio Images- Hovering effect*/
-
 .hovereffect {
   width: 100%;
   height: 100%;
@@ -175,38 +214,7 @@
 /*End Image hover text for Bio*/
 
 
-/*Video Overlay*/
-video#bgvid { 
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background:transparent url(../video/berksCompressed.jpg) no-repeat 0 0;
-    -webkit-background-size:cover; 
-   -moz-background-size:cover; 
-   -o-background-size:cover; 
-   background-size:cover; 
-}
 
-video { display: block; }
-
-@media screen and (max-device-width: 800px) {
-    video#bgvid  {
-         background: url(../video/berksCompressed.jpg) no-repeat 0 0; 
-                 display: none;
-        z-index: -700;
-
-    }
-}
-/*End Video Overlay*/
 
 /* ===== Begin rotate boxes ===== */
 /* Begin rotate box-1 */
@@ -314,12 +322,11 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 
 
 
-
 /*Main Window Carousel Styling*/
 .item h1{
 	font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
-  	font-size: 80px;
-  	font-weight: 500;
+  font-size: 80px;
+  font-weight: 500;
 }
 .item h3{
 	  "Courier New", Courier, monospace
@@ -327,7 +334,22 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	  font-weight: 200;
 
 }
-/*Tablet and Phone adjustment for Title*/
+
+.item p{
+  font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
+  font-size: 30px;
+  font-weight: 500;
+
+}
+
+.longitem p{
+  font-family: Perpetua, Baskerville, 'Big Caslon', 'Palatino Linotype', Palatino, 'URW Palladio L', 'Nimbus Roman No9 L', serif;
+  font-size: 20px;
+  font-weight: 500;
+
+}
+
+/*Tablet and Phone adjustment for website headline under id=bg-section*/
 @media only screen and (max-width: 768px) {
 
    .item h1{ font-size: 70px; }
@@ -335,106 +357,14 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 }
 
 
-
-/*Section Styling*/
-.page {
-  overflow: hidden;
-  background-color: #fff;
-  padding: 3% 0;
-}
-
-
-
-.parallax {
-	position: relative;
-	background-position: 0 0;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	-webkit-background-size: cover;
-  	background-size: cover;
-}
-
-
-.alignright {
-	float: right;
-}
-
-#bg-section { min-height: 100vh; }
-
-
-
-.bottom{
-	padding-bottom: 4%;
-}
-
-.text-white { color: #FFF; }
-
-.important{
- 	z-index: 10;
-}
-
-#testimonial-section{
-	color: #FFF;
-}
-
-#owl-intro-text{
- 	padding-top: 25%;
- 	padding-bottom:20%;
-	color: #FFF;
-
-}
-
-.font{
-	color: black;
-}
-
-.fontwhite{
-	color: white;
-}
-
-.fontred{
-	color: #FC6E51;
-}
-.fontgreen{
-	color: #A0D468;
-}
-
-.zindex{
-	z-index: 100;
-}
-
-h2{
-	font-family: 'Buenard', serif;
-}
-
-
-.about-background{
-	background: url(../img/profileCopy.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
-.review-background{
-	background: url(../img/champ.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.contact-background{
-	background: url(../img/map-image-copy.jpg) no-repeat center center fixed; 
-	  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-
 /*Bio Modal*/
+@media(max-width:768px) {
+  .modalDialog {
+      padding: 45px 20px 13px 20px;
+  }
+}
+
+
 .modalDialog {
     position: fixed;
     max-height: 100%;
@@ -444,6 +374,7 @@ h2{
     right: 0;
     bottom: 0;
     left: 0;
+    color: black;
     background: rgba(0, 0, 0, 0.8);
     z-index: 20;
     opacity:0;
@@ -467,15 +398,16 @@ h2{
     background: -webkit-linear-gradient(#fff, #999);
     background: -o-linear-gradient(#fff, #999);
 }
+
 .close {
     background: #606061;
     color: #FFFFFF;
     line-height: 25px;
-    position: absolute;
+    position: relative;
     right: -12px;
     text-align: center;
     top: -10px;
-    width: 24px;
+    max-width: 40px;
     text-decoration: none;
     font-weight: bold;
     -webkit-border-radius: 12px;
@@ -485,10 +417,266 @@ h2{
     -webkit-box-shadow: 1px 1px 3px #000;
     box-shadow: 1px 1px 3px #000;
 }
+
 .close:hover {
-    background: #00d9ff;
+    background: #fc6e51;
+}
+
+/*End Bio Modal*/
+
+
+
+
+/*Section Styling*/
+.page {
+  overflow: hidden;
+  background-color: #fff;
+  
+  padding: 1% 0;
+}
+
+.fullpage{
+  height:100vh;
 }
 
 
 
-/*End Bio Modal*/
+.parallax {
+  position: relative;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+.text-white { color: #FFF; }
+
+
+#testimonial-section{
+  color: #FFF;
+}
+
+#owl-intro-text{
+  padding-top: 25%;
+  padding-bottom:20%;
+ 
+}
+
+.fontblack{
+  color: black;
+}
+
+.fontwhite{
+  color: white;
+}
+
+.fontred{
+  color: #FC6E51;
+}
+.fontgreen{
+  color: #A0D468;
+}
+
+h2{
+  font-family: 'Buenard', serif;
+}
+#bg-section { 
+
+    width: 100%    !important;
+    height: auto   !important;
+}
+
+.top {
+     margin-top: 2%;
+  }
+
+    .margin{    
+      margin-top: .75%;
+  }
+
+  /*Background Images*/
+
+  .review-background{
+    background: url(../img/background/champ.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+  .about-background{
+    background: url(../img/background/profileSaturation.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+  }
+
+  .contact-background{
+    background: url(../img/background/map-image-copy.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+    .facts-background{
+    background: url(../img/background/corysaturation.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
+.snip1336 {
+  font-family: 'Roboto', Arial, sans-serif;
+  
+  position: relative;
+  float: center;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+  
+  min-width: 230px;
+  max-width: 315px;
+
+  width: 100%;
+  color: #ffffff;
+  text-align: left;
+  line-height: 1.4em;
+  background-color: #141414;
+}
+.snip1336 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+.snip1336 img {
+  max-width: 100%;
+  vertical-align: top;
+  opacity: 0.85;
+}
+.snip1336 figcaption {
+  width: 100%;
+  background-color: #141414;
+  padding: 25px;
+  position: relative;
+}
+.snip1336 figcaption:before {
+  position: absolute;
+  content: '';
+  bottom: 100%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 55px 0 0 400px;
+  border-color: transparent transparent transparent #141414;
+}
+.snip1336 figcaption a {
+  padding: 5px;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  margin: 10px 0;
+  display: inline-block;
+  opacity: 0.65;
+  width: 47%;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.snip1336 figcaption a:hover {
+  opacity: 1;
+}
+.snip1336 .profile {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 100%;
+  left: 25px;
+  z-index: 1;
+  max-width: 90px;
+  opacity: 1;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+.snip1336 .follow {
+  margin-right: 4%;
+  border-color: #2980b9;
+  color: #2980b9;
+}
+.snip1336 h2 {
+  margin: 0 0 5px;
+  font-weight: 300;
+}
+.snip1336 h2 span {
+  display: block;
+  font-size: 0.5em;
+  color: #2980b9;
+}
+
+.snip1336 p {
+  margin: 0 0 10px;
+  font-size: 0.8em;
+  letter-spacing: 1px;
+  opacity: 0.8;
+}
+
+/*Spacing between Barber Profiles*/
+@media(max-width:992px){
+     .cushion{    
+      margin-top: .75%;
+  }
+}
+
+
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+
+
+}
+
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+}
+
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+
+}
+
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */
+.rowmargin {
+     margin-top: 2%;
+  }
+
+}
+
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ 
+.rowmargin {
+     margin-top: 2%;
+  }
+}
+
+
+@media (min-width:1281px) { 
+  /* hi-res laptops and desktops */ 
+.rowmargin {
+     margin-top: 2%;
+  }
+
+}
+
+
+
+
+
