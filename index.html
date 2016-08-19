@@ -64,7 +64,9 @@
 		<script src="js/modernizr.custom.js"></script>
 
 
-
+		<!--Full page setup-->
+		<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
+		<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
 		
 	</head>
 	
@@ -281,7 +283,7 @@
 	
 	
 	
-	<section id="about-section" class="page  img-responsive text-white about-background iosNoScroll" >
+	<section id="about-section" class="page  img-responsive text-white about-background" >
 		 <!-- Begin page header-->   
 		<div class="container-fluid">
 			<div class="row"> 
@@ -289,7 +291,7 @@
 					<div class="text-center wow fadeInDown" data-wow-delay="0.0s">
 						<h2>About Us</h2>
 						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-							<p class="subtitle">If you didn't know</p>
+							<p class="subtitle">Although, we couldn't do it without you</p>
 					</div>
 				</div>
 			</div>
@@ -457,45 +459,58 @@
 			</div>
 		</div>
 	</section>		
-
-		<!--Facts Section-->
-	<section id="facts-section" class="page text-white facts-background facts">
+	
+	
+	<section id="facts-section" class="page img-responsive text-white facts-background facts" >
+		 <!-- Begin page header-->   
 		<div class="container-fluid">
 			<div class="row"> 
 				<div class="col-md-12">
 					<div class="text-center wow fadeInDown" data-wow-delay="0.0s">
 						<h2>Some Facts</h2>
 						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-							<p class="subtitle">In case you didn't know</p>
+							<p class="subtitle">If you didn't know</p>
 					</div>
 				</div>
 			</div>
-			
-			<div class="row"> 
-				<div class="text-center col-md-3 col-sm-6 wow fadeInDown" data-wow-delay="0.2s">
-					<i class="fa fa-users fa-3x"></i>
-					<span id="clients" >0</span>		
-					<p class="lead">Clients Visiting Berks Barbershop</p>
-				</div>
-				<div class="text-center col-md-3 col-sm-6 wow fadeInDown" data-wow-delay="0.3s">
-					<i class="fa fa-scissors fa-3x"></i>
-					<span id="competition" >0</span>	
-					<p class="lead">Competitions attentded</p>
-				</div>
-				<div class="text-center col-md-3 col-sm-6 wow fadeInDown" data-wow-delay=".4s">
-					<i class="fa fa-trophy fa-3x"></i>
-					<span id="winning" >0</span>
-					<p class="lead text-center">Winning Awards</p>
-				</div>
-				<div class="text-center col-md-3 col-sm-6 wow fadeInDown" data-wow-delay=".5s">
-					<i class="fa fa-clock-o fa-3x"></i>
-					<span id="facts" >0</span>
-					<p class="lead text-center">Years in Operation</p>
+			<div class="rotate-box-1-wrapper ">
+				<div class="row">
+					<div class="text-center col-md-3 col-sm-3 ">
+						<a class="rotate-box-1 square-icon wow zoomIn " data-wow-delay="0">
+							<span class="rotate-box-icon "><i class="fa fa-users fontred"></i></span>
+							<span id="clients" >0</span>
+									<h4 class="rotate-box-info ">Clients visiting Berks Barber Shop</h4>
+									
+						</a>
+					</div>
+					<div class="text-center col-md-3 col-sm-3">
+						<a style="text-decoration: none" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.2s">
+							<span class="rotate-box-icon "><i class="fa fa-scissors  fontgreen"></i></span>
+									<span id="competition" >0</span>
+							<h4 class="rotate-box-info">Competitions attended</h4>
+					
+						</a>
+					</div>
+					<div class="text-center col-md-3 col-sm-3">
+						<a style="text-decoration: none" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.3s">
+							<span class="rotate-box-icon"><i class="fa fa-trophy fontred"></i></span>
+							<span id="winning" >0</span>
+									<h4 class="rotate-box-info ">Winning Awards</h4>
+									
+						</a>
+					</div>
+					<div class="text-center col-md-3 col-sm-3">
+						<a style="text-decoration: none" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
+							<span class="rotate-box-icon"><i class="fa fa-clock-o fontgreen"></i></span>
+							<span id="facts" >0</span>
+									<h4 class="rotate-box-info ">Years in Operation</h4>
+									
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
-	</section>	<!--End of Fun Facts-->
-	
+	</section>
 
 	
 
@@ -521,7 +536,7 @@
 	<!--End Join US Section-->
 
 
-	 <section id="testimonial-section" class="page container-fluid img-responsive review-background iosNoScroll">
+	 <section id="testimonial-section" class="page container-fluid img-responsive review-background">
 		<div class="row"> 
 			<div class="col-md-12">
 				<div class="text-center wow fadeInDown" data-wow-delay="0.0s">
@@ -575,7 +590,8 @@
 					<div class="text-center wow fadeInDown" data-wow-delay="0.0s">
 						<h2>BBS Recent Activities</h2>
 						<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
-							
+						<h4>Our guys competed in the Barber Challenge in Omaha, each bringing home a medal!</h4>
+
 
 					</div>
 				</div>
@@ -586,8 +602,8 @@
 		<!--End Join US Section-->
 		
 	<!--Begin Contact Section-->
-	<section id="contact-section" class="contact-section fontwhite page  img-responsive contact-background iosNoScroll">         
-		<div class="container-fluid">
+	<section id="contact-section" class="contact-section fontwhite page img-responsive contact-background">         
+		<div class="container-fluid contact-area ">
 			<div class="row"> 
 				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" >
 					<div class="text-center wow fadeInDown" data-wow-delay="0.0s">
@@ -599,7 +615,7 @@
 			</div>
 
 			<div class="row ">
-				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-delay="0.2s">
+				<div class="  col-lg-6 col-md-6 col-sm-6 col-xs-12 wow fadeInDown" data-wow-delay="0.2s">
 					<div class="contact-info">
 						<h4>Our Address</h4>
 						<ul class="contact-address">
@@ -767,13 +783,19 @@
     <!--IOS Check, overriding background scroll settings for image-->
     <script type="text/javascript">    
 
+	    	
 	    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-
 	    if(iOS==true){
-	    	var noscrolls = document.getElementsByClassName(iosNoScroll);
+			var noscrolls = document.getElementsByClassName("about-background  ");
+			var noscroll1 = document.getElementsByClassName("review-background  ");
+			var noscroll2 = document.getElementsByClassName("contact-background  ");
+			var noscroll3 = document.getElementsByClassName("facts-background  ");
 	    	i=noscrolls.length;
 	    	while(i--){	
 	    		noscrolls[i].style.backgroundAttachment = "scroll";
+	    		noscroll1[i].style.backgroundAttachment = "scroll";
+	    		noscroll2[i].style.backgroundAttachment = "scroll";
+	    		noscroll3[i].style.backgroundAttachment = "scroll";
 	    	}
 	    }
     </script>
@@ -838,24 +860,18 @@
     
 	function counter() {
 	// setup CountUp object
-    demo = new CountUp('clients', 0, 1004, 0, 5, options);
+    demo = new CountUp('clients', 0, 1004, 0, 4, options);
     demo.start();
 
 	comp = new CountUp('competition', 0, 4, 0, 3, options);
 	comp.start();
 	
-	win =  new CountUp('winning', 0, 9, 0, 5, options);
+	win =  new CountUp('winning', 0, 9, 0, 7.0, options);
 	win.start();
 	
-	fact= new CountUp('facts', 0, 3, 0, 2.0, options);
+	fact= new CountUp('facts', 0, 3, 0, 3.0, options);
 	fact.start();
 	};
-
-	$(allInView);
-	$(window).scroll(allInView);
-
-	
-
 
 	function isScrolledIntoView(elem) {
 	    var docViewTop = $(window).scrollTop();
@@ -865,22 +881,19 @@
 	    var elemBottom = elemTop + $(elem).height();
 
 	    return ((elemBottom <= docViewBottom) && (elemTop >= docViewTop));
-	}
+	};
+
 
 	function allInView() {
-		
-
 		if (isScrolledIntoView($(".facts")) ){
-	
 			counter();
-		
 		} 
+	};
+
+	$(allInView);
+	$(window).scroll(allInView);
 
 
-
-
-
-	}
 
 	</script>
 

@@ -96,13 +96,19 @@ video{
   width: auto;
   height: auto;
   z-index: -100;
-  background:transparent url('../video/wideshot.png') no-repeat 0 0;
+  background: url('../video/wideshot.png') no-repeat center center scroll; 
+  
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
+
   -webkit-transform: translateX(-50%) translateY(-50%);
+  
   transform: translateX(-50%) translateY(-50%);
-  background-size: 100% 100%;
-  background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
 } 
 
 /* Removing Apple Play Buttons from Introduction Video for mobile */
@@ -435,9 +441,6 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
   padding: 1% 0;
 }
 
-.fullpage{
-  height:100vh;
-}
 
 
 
@@ -501,7 +504,7 @@ h2{
   /*Background Images*/
 
   .review-background{
-    background: url(../img/background/champ.jpg) no-repeat center center fixed; 
+    background: url(../img/background/profile_blackwhite.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -510,7 +513,7 @@ h2{
 
 
   .about-background{
-    background: url(../img/background/profileSaturation.jpg) no-repeat center center fixed; 
+    background: url(../img/background/profile_blackwhite.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -519,7 +522,8 @@ h2{
   }
 
   .contact-background{
-    background: url(../img/background/map-image-copy.jpg) no-repeat center center fixed; 
+    background: url(../img/background/map_2.jpg) no-repeat center center fixed; 
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -527,7 +531,7 @@ h2{
   }
 
     .facts-background{
-    background: url(../img/background/corysaturation.jpg) no-repeat center center fixed; 
+    background: url(../img/background/cory_blackwhite.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
