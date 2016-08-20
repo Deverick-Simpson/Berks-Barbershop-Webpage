@@ -1,4 +1,5 @@
 /*Begin Navbar*/
+
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
@@ -103,6 +104,7 @@ video{
 
   -webkit-transform: translateX(-50%) translateY(-50%);
   
+
   transform: translateX(-50%) translateY(-50%);
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -325,6 +327,17 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 	padding-left: 60px;
 }
 /* End rotate box-1 */
+
+
+
+.demo-card {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto 100px;
+}
+h4.title {
+  text-align: center;
+}
 
 
 
@@ -637,6 +650,13 @@ h2{
   letter-spacing: 1px;
   opacity: 0.8;
 }
+.thumbnail{        
+    width: 350px; // or you could use percentage value for responsive layout
+    height: 600px;
+     margin-left: auto;
+    margin-right: auto;
+}
+
 
 /*Spacing between Barber Profiles*/
 @media(max-width:992px){
