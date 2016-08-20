@@ -97,7 +97,7 @@ video{
   width: auto;
   height: auto;
   z-index: -100;
-  background: url('../video/wideshot.png') no-repeat center center scroll; 
+  background: url('../video/wideshot.png') no-repeat center center ; 
   
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -517,7 +517,7 @@ h2{
   /*Background Images*/
 
   .review-background{
-    background: url(../img/background/profile_blackwhite.jpg) no-repeat center center fixed; 
+    background: url(../img/background/profilerough.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -526,7 +526,7 @@ h2{
 
 
   .about-background{
-    background: url(../img/background/profile_blackwhite.jpg) no-repeat center center fixed; 
+    background: url(../img/background/profilerough.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -535,7 +535,7 @@ h2{
   }
 
   .contact-background{
-    background: url(../img/background/map_2.jpg) no-repeat center center fixed; 
+    background: url(../img/background/map-imagerough.jpg) no-repeat center center fixed; 
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -544,7 +544,7 @@ h2{
   }
 
     .facts-background{
-    background: url(../img/background/cory_blackwhite.jpg) no-repeat center center fixed; 
+    background: url(../img/background/coryrough.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
