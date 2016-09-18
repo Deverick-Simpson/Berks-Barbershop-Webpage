@@ -85,6 +85,7 @@
 
 
 
+
 /* ===== Begin rotate boxes ===== */
 /* Begin rotate box-1 */
 .rotate-box-1, .rotate-box-2 {
@@ -192,37 +193,16 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
 
 
 .img{
+ width: auto\9; 
   height: auto;
-  max-width: 100%;
-  width: 100%;
+  max-width: 100%; /* Auto scale */
+  vertical-align: middle;
+  border: 0;
+  -ms-interpolation-mode: bicubic;
+
 }
 
 
-/*Video Overlay*/
-video{ 
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: -100;
-  background: url('../video/wideshot.png') no-repeat center center ; 
-  
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  
-
-  transform: translateX(-50%) translateY(-50%);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-
-} 
 
 /* Removing Apple Play Buttons from Introduction Video for mobile */
 /* This used to work for parent element of button divs */
@@ -358,16 +338,6 @@ video{
 
 
 
-/*Section Styling*/
-.page {
-
-  background-color: #fff;
-  padding: 1% 0;
-}
-
-
-
-
 .parallax {
   position: relative;
   background-position: 0 0;
@@ -411,11 +381,7 @@ video{
 h2{
   font-family: 'Buenard', serif;
 }
-#bg-section { 
 
-    width: 100%    !important;
-    height: auto   !important;
-}
 
 .top {
      margin-top: 2%;
@@ -464,6 +430,10 @@ h2{
 
 
 
+.center-me {
+  display:block;
+  text-align:center;
+}
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:300,400,600);
 .snip1336 {
@@ -512,7 +482,7 @@ h2{
   border-width: 55px 0 0 400px;
   border-color: transparent transparent transparent #141414;
 }
-.snip1336 figcaption a {
+.snip1336  .default {
   padding: 5px;
   border: 1px solid #ffffff;
   color: #ffffff;
@@ -569,6 +539,23 @@ h2{
 }
 
 
+.logo{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.padding{
+  padding-top: 1%;
+  padding-bottom: 2%;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+
+
 /*Spacing between Barber Profiles*/
 @media(max-width:992px){
      .cushion{    
@@ -608,6 +595,12 @@ h2{
 .rowmargin {
      margin-top: 2%;
   }
+
+}
+
+#bg{
+    background:url('../img/background/blackbg.jpg') no-repeat center center;
+    height: 864px;
 
 }
 
