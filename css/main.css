@@ -428,6 +428,13 @@ h2{
     background-size: cover;
   }
 
+    .main-background{
+    background: url(../img/background/blackbg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
 
 
 .center-me {
