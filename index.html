@@ -72,6 +72,23 @@
 
 	
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+		<script>
+		  window.fbAsyncInit = function() {
+		    FB.init({
+		      appId      : '730345980456258',
+		      xfbml      : true,
+		      version    : 'v2.8'
+		    });
+		  };
+
+		  (function(d, s, id){
+		     var js, fjs = d.getElementsByTagName(s)[0];
+		     if (d.getElementById(id)) {return;}
+		     js = d.createElement(s); js.id = id;
+		     js.src = "//connect.facebook.net/en_US/sdk.js";
+		     fjs.parentNode.insertBefore(js, fjs);
+		   }(document, 'script', 'facebook-jssdk'));
+		</script>
 
     	<!-- Navigation -->
  	
@@ -132,6 +149,12 @@
 							<h1>Our Team</h1>
 							<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
 								<p class="subtitle">Meet our professionals</p>	
+									<div
+									  class="fb-like"
+									  data-share="true"
+									  data-width="450"
+									  data-show-faces="true">
+									</div>
 						</div>
 					</div>
 				</div>
@@ -146,8 +169,7 @@
 
 						    <a href="https://www.instagram.com/bigberks/" class="follow default">Follow</a>
 						    <a href="#CoryBio" class="info default">More Info</a>
-						    
-
+						   
 						    <div id="CoryBio" class="modalDialog">
 								<div>	
 									<a href="#close" title="Close" class="close">X</a>
@@ -172,27 +194,7 @@
 						  </figcaption>
 						</figure>
 					</div>
-					<div class="cushion col-xl-4 col-xl-offset-0 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
-						<figure class="snip1336">
-						  <img src="img/bio/nateCover.jpg" alt="sample87" />
-						  <figcaption>
-						    <!--<img src="img/bio/nateCover.jpg" alt="profile-sample4" class="profile" />-->
-						    <h2>Nate Berks<span>CEO/Master Barber</span></h2>
-						    <p>I established a passion for cutting hair through watching veterans when I was younger and practicing my own craft on fellow classmates when in high school. </p>
-						    <a href="https://www.instagram.com/nategettinit/" class="follow default">Follow</a>
-						    <a href="#NateBio" class="info default">More Info</a>
-					
-						    <div id="NateBio" class="modalDialog">
-							<div>	<a href="#close" title="Close" class="close">X</a>
-								<h2>Nate Berks</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/nateCover.jpg" alt="Nate Berks">
-								<p>Through a business proposition and even more brotherly persuasion, I'm the second brother that contributed to molding Berks Barber Shop into what it is today. I established a passion for cutting hair through watching veterans when I was younger and practicing my own craft on fellow classmates when in high school. I moved forward in barbering to College of Hair Design where I honed my craft to become the barber I am today. After collaborating my new style with my older brothers already established clientele Berks Barber Shop was born.
-									I specialize in fades and freestyle designs.</p>
-								<p> My favorite thing to accomplish day in and day out is a way of transformation through my clients hair and personal appearance. Taking a large amount of hair off or completely changing someone's appearance around to give them the haircut that they've always been searching for is what's important and fun to me. Making someone feel good on the inside after leaving Berks Barber Shop is what makes barbering and amazing trait for me. My attention to detail and customer appreciation keeps my clients returning with family and friends as well.</p>
-							</div>
-						</div>
-						  </figcaption>
-						</figure>
-					</div>
+
 					<div class="cushion col-xl-4 col-xl-offset-0 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
 						<figure class="snip1336">
 						  <img src="img/bio/edits/thordyCover.jpg" alt="sample87" />
@@ -217,11 +219,63 @@
 						</figure>
 
 					</div>
+					<div class="cushion col-xl-4 col-xl-offset-0 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+						<figure class="snip1336">
+						  <img src="img/bio/nateCover.jpg" alt="sample87" />
+						  <figcaption>
+						    <!--<img src="img/bio/nateCover.jpg" alt="profile-sample4" class="profile" />-->
+						    <h2>Nate Berks<span>CEO/Master Barber</span></h2>
+						    <p>I established a passion for cutting hair through watching veterans when I was younger and practicing my own craft on fellow classmates when in high school. </p>
+						    <a href="https://www.instagram.com/nategettinit/" class="follow default">Follow</a>
+						    <a href="#NateBio" class="info default">More Info</a>
 					
-
-				</div>
+						    <div id="NateBio" class="modalDialog">
+							<div>	<a href="#close" title="Close" class="close">X</a>
+								<h2>Nate Berks</h2><img  class="img-fluid img-responsive" align="right" src="img/bio/nateCover.jpg" alt="Nate Berks">
+								<p>Through a business proposition and even more brotherly persuasion, I'm the second brother that contributed to molding Berks Barber Shop into what it is today. I established a passion for cutting hair through watching veterans when I was younger and practicing my own craft on fellow classmates when in high school. I moved forward in barbering to College of Hair Design where I honed my craft to become the barber I am today. After collaborating my new style with my older brothers already established clientele Berks Barber Shop was born.
+									I specialize in fades and freestyle designs.</p>
+								<p> My favorite thing to accomplish day in and day out is a way of transformation through my clients hair and personal appearance. Taking a large amount of hair off or completely changing someone's appearance around to give them the haircut that they've always been searching for is what's important and fun to me. Making someone feel good on the inside after leaving Berks Barber Shop is what makes barbering and amazing trait for me. My attention to detail and customer appreciation keeps my clients returning with family and friends as well.</p>
+							</div>
+						</div>
+						  </figcaption>
+						</figure>
+					</div>
+				</div >	<!--End row-->
 				<div class="row rowmargin">
-					<div class="cushion col-xl-4 col-xl-offset-2 col-lg-4 col-lg-offset-2 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-2  col-xs-8 col-xs-offset-2">
+					<div class="col-xl-4 col-xl-offset-0 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0  col-xs-8 col-xs-offset-2">
+						<figure class="snip1336">
+						  <img src="img/bio/mike3.jpg" alt="sample87" />
+						  <figcaption>
+						    <!--<img src="img/bio/edits/berks2.jpg" alt="profile-sample4" class="profile" />-->
+						    <h2>Mike Lott<span>Master Barber</span></h2>
+						    <p>Growing up where I'm from I never thought I'd have a passion for cutting hair. It was either you played basketball or football. I used to give my cousins an a few friends line-ups here an there, but I never thought I'd make a career out of it. </p>
+
+						    <a href="https://www.instagram.com/Mik3_jayb/" class="follow default">Follow</a>
+						    <a href="#MikeBio" class="info default">More Info</a>
+						    
+
+						    <div id="MikeBio" class="modalDialog">
+								<div>	
+									<a href="#close" title="Close" class="close">X</a>
+									<div class="container-fluid">
+										<div class="row"> 
+											<div class="col-md-12">
+												<h2>Mike</h2>	<img  class="img-fluid img-responsive" align="right" src="img/bio/mike-small.jpg" alt="Mike">
+												<p>Growing up where I'm from I never thought I'd have a passion for cutting hair. It was either you played basketball or football. I used to give my cousins an a few friends line-ups here an there, but I never thought I'd make a career out of it. </p>
+
+<p>When I moved to Nebraska, all I wanted to do was finish high school An work a 9 to 5 job. Throughout high school I met someone who had a love for doing hair. She pushed an motivated me to becoming a barber, so I signed up for barber school!</p>
+
+<p>During Barber college I learned different types of cutting techniques An more! After 14 months of college I now specialize is in cutting all hair types, Fades, Tapers, Shear work, an I have wonderful customer service! So for a crispy an relaxing haircut, take a seat in my chair and enjoy a great experience and atmosphere at Berks Barbershop!
+												</p>			
+											</div>									
+										</div>
+									</div>
+								</div>
+							</div>
+						  </figcaption>
+						</figure>
+					</div>	
+					<div class="cushion col-xl-4 col-xl-offset-0 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0 col-sm-4 col-sm-offset-0  col-xs-8 col-xs-offset-2">
 						<figure class="snip1336">
 						  <img src="img/bio/edits/codyProfile2.jpg" alt="sample87" />
 						  <figcaption>
@@ -253,7 +307,7 @@
 						  <figcaption>
 						    <!--<img src="img/bio/tonyCover.jpg" alt="profile-sample4" class="profile" />-->
 						    <h2>Tony Parker<span>Master Barber</span></h2>
-						    <p>I started my career at True Skills barbershop shortly after graduation before joining Berks barbershop. I specialize in bald fades, taper fades, flattops, comb overs etc. you name it and I'll cut it. </p>
+						    <p>I starte d my career at True Skills barbershop shortly after graduation before joining Berks barbershop. I specialize in bald fades, taper fades, flattops, comb overs etc. you name it and I'll cut it. </p>
 						    <a href="https://www.instagram.com/yungtonyp/" class="follow default">Follow</a>
 						    <a href="#TonyBio" class="info default">More Info</a>
 						    <div id="TonyBio" class="modalDialog">
@@ -510,9 +564,13 @@
 								<div class="row"> 
 									<div class="col-md-offset-2 col-md-8">
 										<p class="subtitle">Online Booking gives you the ability to reserve a specific appointment time with any one of our skilled barbers. At Berks Barber Shop we can accomplish any haircut or style on any texture of hair. All haircuts include Line-up and Beard Trim with Razor upon request. Complimentary Aftershave and Oil sheen also applied. The appointment fee is 10$.  </p>
-									</div>
+									
+                                    </div>
 								</div>
 							</div>
+                            <div>
+      
+                            </div>
 							<div id="popup" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<!-- Start Square Appointments Embed Code --><script src='https://squareup.com/appointments/buyer/widget/2884534a-e5c4-466b-afb2-280b0a74f6ec.js'></script><!-- End Square Appointments EmbedCode -->
 							</div>	
@@ -612,9 +670,9 @@
 					        	<h3>Address</h3>
 
 								<ul class="contact-address">
-									<li><a href="https://www.google.com/maps/place/906+L+St,+Lincoln,+NE+68508/@40.8103167,-96.7083861,17z/data=!4m7!1m4!3m3!1s0x8796bf0239402d5b:0x81821f78aae9fc22!2s906+L+St,+Lincoln,+NE+68508!3b1!3m1!1s0x8796bf0239402d5b:0x81821f78aae9fc22"><i class="fa fa-map-marker fa-lg"></a></i> &nbsp;906 L St, Lincoln, Nebraska 68508, USA</li>
+									<li><a href="https://www.google.com/maps/place/841+N+48th+St+%232,+Lincoln,+NE+68504/@40.8218039,-96.6565021,17z/data=!3m1!4b1!4m5!3m4!1s0x8796bc24bd220447:0xc7259da1b0676d1!8m2!3d40.8218039!4d-96.6543134"><i class="fa fa-map-marker fa-lg"></a></i> &nbsp;841 N 48th St. #2, Lincoln, Nebraska 68504, USA</li>
 									<li><a href="tel:1-402-261-4583"><i class="fa fa-phone"></a></i>&nbsp; 1-402-261-4583</li>
-									<li><a href="bigberks@berksbarbershop.com"><i class="fa fa-envelope"></a></i> bigberks@berksbarbershop.com</li>
+									<li><a href="bigberks@berksbarbershop.com"><i class="fa fa-envelope"></a></i> info@berksbarbershop.com</li>
 								</ul>
 							</div>
 
