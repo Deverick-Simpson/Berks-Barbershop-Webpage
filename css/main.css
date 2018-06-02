@@ -333,6 +333,11 @@ a.rotate-box-1:hover, a.rotate-box-2:hover {
     background: #fc6e51;
 }
 
+.image{
+  height: auto;
+  width: 100%;
+}
+
 /*End Bio Modal*/
 
 
@@ -404,6 +409,15 @@ h2{
 
   .about-background{
     background: url(../img/background/profilerough.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+   
+  }
+
+    .mike-background{
+    background: url(../img/background/mkdull.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -611,4 +625,18 @@ h2{
 
 }
 
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.biopara {
+    font-size: 1.6em;
+    display: inline-block;
+
+}
 
