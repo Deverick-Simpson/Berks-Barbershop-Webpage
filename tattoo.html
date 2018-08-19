@@ -16,30 +16,28 @@
 		<meta name="author" content="Deverick Simpson">
 
 
+
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes" />
 		<link rel="apple-touch-icon" href="img/BERKS_Logo.png">
 
-		<script type='text/javascript' src='js/jquery.js'></script> 
+
 		<!-- Custom Fonts -->
 		<!--Font Awesome Link-->
 		<link href="css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
-    
-				
-		<!--UniteGallery-->
-		<script type='text/javascript' src='img/unitegallery/js/unitegallery.min.js'></script> 
-		<link rel='stylesheet' href='img/unitegallery/css/unite-gallery.css' type='text/css' /> 
-		<script type='text/javascript' src='img/unitegallery/themes/tiles/ug-theme-tiles.js'></script> 
+
 
 		<!-- Libs and Plugins CSS -->
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
-		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+		<link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+
 		<link rel="stylesheet" href="css/main.css">
 		
 		<!--Owl Containers-->
-		<link rel="stylesheet" href="bower_components/owl-carousel.2/assets/owl.carousel.css">
+		<link href="node_modules/owl.carousel/dist/assets/owl.carousel.min.css" rel="stylesheet" type="text/css">
+		<link href="node_modules/owl.carousel/dist/assets/owl.theme.default.css" rel="stylesheet" type="text/css">
 
 		<!--Animate Containers-->
 		<link rel="stylesheet" href="css/animate.css">
@@ -47,83 +45,71 @@
 		<!--Animate Images-->
 		<link href="bower_components/ihover/src/ihover.css" rel="stylesheet">
 
-		<!-- Include js plugin -->
-		<script src="bower_components/owl-carousel.2/owl.carousel.min.js"></script>
-		
-		<!--Custom bootstrap frame addition-->
-		<link href="bower_components/Bootflat/bootflat/css/bootflat.css" rel="stylesheet">
-		
-		<!--Counting Up animation-->
-		<script src="js/countUp.js-master/dist/countUp.min.js"></script>
-		
-		<script src="js/modernizr.custom.js"></script>
-
-		<script type="text/javascript" src="node_modules/instafeed.js/instafeed.min.js"></script>
-
-		<!--BG video
-		<script src="bower_components/vide/dist/jquery.vide.min.js"></script>
-			-->
-		<!--Full page setup
-		<script type="text/javascript" src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-		<link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
-
-		-->
+			<!--Custom bootstrap frame addition-->
+		<link href="node_modules/bootflat/bootflat/css/bootflat.min.css" rel="stylesheet">
 		
 	</head>
 	
 
 	
 	<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    	<!-- Navigation -->
- 	
-		<nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
-							<i class="fa fa-bars"></i>
-						</button>
-	
-					</div>
-					<!-- Collect the nav links, forms, and other content for toggling -->
-					<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-						<ul class="nav navbar-nav">
-							<!-- Hidden li included to remove active class from about link when scrolled up past about section -->
-							<li>
-								<a class="page-scroll" href="#home-section">Home</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#about-section">About Me</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#gallery-section">Tattoo Gallery</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="index.html">Barber Shop</a>
-							</li>
-							<li>
-								<a class="page-scroll" href="#contact-section">Contact Us</a>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
+
+   	<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark " id="berks-nav">
+			<a class="navbar-brand item-nav" href="index.html">Berks Barbershop</a>
+
+		    	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#dual-collapse2">
+		            <span class="navbar-toggler-icon"></span>
+		        </button>
+
+
+			<div  class="navbar-collapse collapse" id="dual-collapse2">
+		        <ul class=" navbar-nav item-nav">
+		        	<li class="nav-item dropdown ">
+							<a class="nav-link dropdown-toggle active fa fa-home" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> The Shop</a>
+							<div class="dropdown-menu dropdown-color" aria-labelledby="navbarDropdownMenuLink">
+			        		<a class="dropdown-item nav-drop dropdown-color fa fa-users" href="index.html#team-section">&nbsp;Barbers</a>
+			        		<a class="dropdown-item nav-drop dropdown-color fa fa-camera" href="index.html#gallery-section">&nbsp;Gallery</a>
+			        		<a class="dropdown-item nav-drop dropdown-color fa fa-phone" href="index.html#footer">&nbsp;&nbsp;Contact Us</a>
+			        		<a  class="dropdown-item nav-drop dropdown-color fa fa-btc"  href="https://commerce.coinbase.com/checkout/7e494e92-1e8c-4f0b-bcd8-6d01d26be8c1"> &nbsp;Bitcoin Payment</a>
+							<script src="https://commerce.coinbase.com/v1/checkout.js"></script>
+			     		
+					</li>
+
+
+
+		        </ul>
+		       <ul class=" navbar-nav  item-nav">
+					<li class="item-nav">
+				        <a class="nav-link fa fa-picture-o" href="tattoo.html"> Tattoo Studio</a>
+				    </li>
+				</ul>
+		    
+			  	
+				<img  class ="logo " src="img/background/blackbg-trans-600.png " alt="Responsive image">
+			
+		
+		        <ul class=" navbar-nav  item-nav ml-auto">
+		        	<li class="nav-item ">
+		    			<a class="nav-link fa fa-calendar " href="#about-section"> Schedule Appointment</a>
+		        	</li>
+				</ul>
+
+		    </div>
 		</nav>
 
 
-		<section id="home-section">
-			<div class="container-fluid " >
-				<div class="row" >
-					<div class="col-lg-12 col-xl-12 col-md-12 col-sm-12 col-xs-12 nopadding">
-						<img src="img/background/mikefore2.JPG" class="img-responsive" alt="Responsive image">
-					</div>	
-				</div>
-			</div>
-		</section>
+
+
+<div class="jumbotron2" >
+   
+</div>
+
+
 
 				<!--Video Section Ends Here-->
 		<section id="team-section" class=" team-section padding">	
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row"> 
 					<div class="col-lg-12 col-md-12">
 						<div class="text-center wow fadeInDown" data-wow-delay="0.0s">
@@ -154,7 +140,7 @@ Mike is happily married with two children, a son and daughter, and is very close
 	
 
 
-		<section id="about-section" class=" img-responsive text-white mike-background" >
+		<section id="about-section" class="schedule-section img-responsive text-white mike-background" >
 			 <!-- Begin page header-->   
 			<div class="container-fluid">
 				<div class="row"> 
@@ -168,28 +154,28 @@ Mike is happily married with two children, a son and daughter, and is very close
 				</div>
 				<div class="rotate-box-1-wrapper ">
 					<div class="row">
-						<div class="text-center col-md-3 col-sm-3 ">
+						<div class="text-center col-md-6 col-sm-6 col-xs-6">
 							<a class="rotate-box-1 square-icon wow zoomIn " data-wow-delay="0">
 								<span class="rotate-box-icon "><i class="fa fa-users fontred"></i></span>
 									<h4 class="rotate-box-info ">Book Consultation</h4>
 										<p>Call Mike at (402) 580-3421.  We would like to schedule a brief in person consultation to discuss the work you're looking to have done </p>
 							</a>
 						</div>
-						<div class="text-center col-md-3 col-sm-3">
+						<div class="text-center col-md-6 col-sm-6 col-xs-6">
 							<a style="text-decoration: none" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.2s">
 								<span class="rotate-box-icon "><i class="fa fa-diamond  fontgreen"></i></span>
 									<h4>Visit Mike</h4>
 										<p>Come down for your scheduled consultation.  Here we will discuss your design and schedule an appointment with a $50 deposit. </p>
 							</a>
 						</div>
-						<div class="text-center col-md-3 col-sm-3">
+						<div class="text-center col-md-6 col-sm-6 col-xs-6">
 							<a style="text-decoration: none" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.3s">
 								<span class="rotate-box-icon"><i class="fa fa-heart fontred"></i></span>
 									<h4 >Appointment Day</h4>
 										<p>Before appointment, ensure proper hydration.  Time to get it done.  Please call ahead if a rescheduling is required.</p>
 							</a>
 						</div>
-						<div class="text-center col-md-3 col-sm-3">
+						<div class="text-center col-md-6 col-sm-6 col-xs-6">
 							<a style="text-decoration: none" class="rotate-box-1 square-icon wow zoomIn" data-wow-delay="0.4s">
 								<span class="rotate-box-icon"><i class="fa fa-clock-o fontgreen"></i></span>
 									<h4 >Following Service</h4>
@@ -214,12 +200,6 @@ Mike is happily married with two children, a son and daughter, and is very close
 								<img src="img/divider.png" class="img-responsive center-block" alt="Responsive image">
 								<p class="subtitle">Many designs available</p>
 							</div>		        
-							
-						
-								<!--Begin Top 1-->
-								<div id="instafeed"></div>
-<!--<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>-->
-									
 						</div>
 					</div>	
 				</div>
@@ -228,43 +208,63 @@ Mike is happily married with two children, a son and daughter, and is very close
 		
 		
 
-	
-		<!-- Footer -->
-		<section id="footer-section ">	
-			<div id="footer" class="page example">
-				<div class=container-fluid>
-					<div class="row">
-						<div class="col-md-12">
-							<div class="footer">
-								<div class="container-fluid">
-									<div class="clearfix">
-										<div class="footer-logo"> </div>
-											<dl class="footer-nav">
-												<dt class="nav-title">ABOUT</dt>
-												<dd class="nav-item"><a href="index.html" class="page-scroll">The Shop</a></dd>
-												<dd class="nav-item"><a href="#team-section" class="page-scroll">About Me</a></dd>
-											</dl>
-											<dl class="footer-nav">
-												<dt class="nav-title">SOCIAL</dt>
-													<dd class="nav-item"><a href="https://www.facebook.com/mikekleintattoo/">Facebook</a></dd>
-													<dd class="nav-item"><a href="https://www.instagram.com/mikekleintattoo/">Instagram</a></dd>
-											</dl>
-											<dl class="footer-nav">
-												<dt class="nav-title">BASIC INFO</dt>
-													<dd class="nav-item"><a href="#gallery-section" class="page-scroll">Gallery</a></dd>
-													<dd class="nav-item"><a href="#contact-section" class="page-scroll">Hours and Location</a></dd>
-											</dl>
-									
-										</div>
-										<div class="footer-copyright text-center">Copyright &copy; 2017 <a href="http://deverick.io">Deverick Apollo </a> All rights reserved.</div>
-									</div>
-								</div>
-							</div>
-						</div>
+
+
+			<!--Begin Join US Section-->
+		<section id="footer" class="page ">
+			<div class="container-fluid">
+				<div class="row ">
+					<div class="col-xs-3 col-sm-3 col-md-3 text-xs-left text-sm-left text-md-left footer-item">
+						<h5>BarberShop</h5>
+						<ul class="list-unstyled quick-links ">
+							<li><a href="index.html#page-top" class=""><i class="fa fa-home"></i> The Shop</a></li>
+							<li><a href="index.html#about-section" class=""><i class="fa fa-book"></i>&nbsp;History</a></li>
+							<li><a href="index.html#appointment-section" class=""><i class="fa fa-calendar"></i>&nbsp;Appointments</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 text-xs-left text-sm-left text-md-left footer-item">
+						<h5 class="pl-3">Media</h5>
+						<ul class="list-unstyled quick-links ">
+
+							<li class="pl-3"><a href="index.html#gallery-section" class=""><i class="fa fa-user"></i>Haircuts</a></li>
+							<li class="pl-3"><a href="index.html#testimonial-section" class=""><i class="fa fa-quote-left"></i>Reviews</a></li>	
+							<li class="pl-3"><a href="https://en.bitcoin.it/wiki/Bitcoin_whitepaper" class=""><i class="fa fa-btc"></i> What is Bitcoin?</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 text-xs-left text-sm-left text-md-left footer-item">
+						<h5 class="pl-3">Tattoo Studio</h5>
+						<ul class="list-unstyled quick-links ">
+							<li class="pl-3"><a href="#appointment-section" class=""><i class="fa fa-calendar"></i>&nbsp;Appointments</a></li>
+							<li class="pl-3"><a href="#gallery-section" class=""><i class="fa fa-camera"></i>&nbsp;Gallery</a></li>
+						</ul>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3 text-xs-left text-sm-left text-md-left footer-item">
+						<h5>Contact Us</h5>
+						<ul class="list-unstyled quick-links">
+							<li><a href="https://www.google.com/maps/place/841+N+48th+St+%232,+Lincoln,+NE+68504/@40.8218039,-96.6565021,17z/data=!3m1!4b1!4m5!3m4!1s0x8796bc24bd220447:0xc7259da1b0676d1!8m2!3d40.8218039!4d-96.6543134"><i class="fa fa-map-marker fa-lg"></i>&nbsp; 841 N. 48th St. Suite #2, Lincoln, NE 68504</a></li>
+							<li><a href="tel:1-402-261-4583"><i class="fa fa-phone"></i>&nbsp;&nbsp;402-261-4583</a></li>
+							<li><a href="mailto:info@berksbarbershop.com" ><i class="fa fa-envelope "></i>&nbsp; info@berksbarbershop.com</a></li>
+						</ul>
 					</div>
 				</div>
+		 
+				<div class="row ">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+						<ul class="list-unstyled list-inline social text-center">
+							<li class="list-inline-item"><a href="https://www.facebook.com/berksbarber"><i class="fa fa-facebook"></i></a></li>
+							<li class="list-inline-item"><a href="https://www.instagram.com/berksbarbershop"><i class="fa fa-instagram"></i></a></li>
+							<li class="list-inline-item"><a href="mailto:info@berksbarbershop.com" ><i class="fa fa-envelope"></i></a></li>
+						</ul>
+					</div>
+				</div>	
+				<div class="row ">
+					<div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+						<p class="h6">&copy All Rights Reversed.<a class="text-green ml-2" href="https://deverick.io/" target="_blank">Deverick Apollo</a></p>
+					</div>
+				</div>	
 			</div>
 		</section>
+
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 
@@ -278,49 +278,14 @@ Mike is happily married with two children, a son and daughter, and is very close
 			  return check;	
 			}
 	    </script>
+	
 
-	    <!--IOS Check, overriding background scroll settings for image
-	    <script type="text/javascript">    		    	
-		    var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
-		    if(iOS==true){
-				var noscrolls = document.getElementsByClassName("about-background  ");
-				var noscroll1 = document.getElementsByClassName("review-background  ");
-				var noscroll2 = document.getElementsByClassName("contact-background  ");
-				var noscroll3 = document.getElementsByClassName("facts-background  ");
-		    	i=noscrolls.length;
-		    	while(i--){	
-		    		noscrolls[i].style.backgroundAttachment = "scroll";
-		    		noscroll1[i].style.backgroundAttachment = "scroll";
-		    		noscroll2[i].style.backgroundAttachment = "scroll";
-		    		noscroll3[i].style.backgroundAttachment = "scroll";
-		    	}
-		    }
-	    </script>
--->
+	    	<script type='text/javascript' src='node_modules/jquery/dist/jquery.min.js'></script>
+	<script type='text/javascript' src='node_modules/popper.js/dist/umd/popper.min.js'></script>
+	<script type='text/javascript' src='node_modules/tooltip.js/dist/umd/tooltip.min.js'></script>
+	<script type='text/javascript' src='node_modules/bootstrap/dist/js/bootstrap.bundle.js'></script>
+	    
 
-	    	<!-- Homescreen Video Overlay-->
-		<script>
-			$(document).ready(function() {
-			  var owl = $('.owl-carousel');
-			  owl.owlCarousel({
-				items: 1,
-				loop: true,
-				margin: 10,
-				autoplay: true,
-				autoplayTimeout: 4000,
-				autoplayHoverPause: false
-			  });
-			  $('.play').on('click', function() {
-				owl.trigger('play.owl.autoplay', [1000])
-			  })
-			  $('.stop').on('click', function() {
-				owl.trigger('stop.owl.autoplay')
-			  })
-			})
-		</script>
-
-	    <!-- Include all compiled plugins (below), or include individual files as needed -->
-	    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	    
 	  
 	    <!--Animations for text-->
@@ -329,61 +294,10 @@ Mike is happily married with two children, a son and daughter, and is very close
 	    <script>
 			new WOW().init();
 	    </script>
-	    <script src="bower_components/jquery.stellar/jquery.stellar.js"></script>
 	    
 
 		
-		<!--Count Up-->
-		<script>
-	    // set CountUp options
-	    // you don't need to do this - you can use the default options
-	    var useOnComplete = false,
-	        useEasing = true,
-	        easingFn = null,
-	        useGrouping = true,
-	        options = {
-	            useEasing : useEasing, // toggle easing
-	            easingFn : easingFn, // defaults to easeOutExpo, but you can specify your own
-	            useGrouping : useGrouping, // 1,000,000 vs 1000000
-	            separator : ',', // character to use as a separator
-	            decimal : '.', // character to use as a decimal
-	        };
 
-	    var demo,comp,win,fact;
-
-	    // create instance
-		function counter() {
-			// setup CountUp object
-		    demo = new CountUp('clients', 0, 1004, 0, 4, options);
-		    demo.start();
-
-			comp = new CountUp('competition', 0, 4, 0, 3, options);
-			comp.start();
-			
-			win =  new CountUp('winning', 0, 9, 0, 7.0, options);
-			win.start();
-			
-			fact= new CountUp('facts', 0, 3, 0, 3.0, options);
-			fact.start();
-		};
-
-		counter();
-
-		</script>
-
-		<!-- Bootflat's JS files.-->
-		<script src="bower_components/Bootflat/bootflat/js/icheck.min.js"></script>
-		<script src="bower_components/Bootflat/bootflat/js/jquery.fs.selecter.min.js"></script>
-		<script src="bower_components/Bootflat/bootflat/js/jquery.fs.stepper.min.js"></script>
-		
-		<!--Gallery--> 
-		<script type="text/javascript"> 
-			jQuery(document).ready(function(){ 
-				jQuery("#gallery").unitegallery({
-					tiles_type:"nested"
-				});
-			}); 
-		</script>
 
 	    <!-- Plugin JavaScript -->
 	    <script src="js/jquery.easing.min.js"></script>
@@ -400,11 +314,6 @@ Mike is happily married with two children, a son and daughter, and is very close
 		  ga('create', 'UA-75233412-1', 'auto');
 		  ga('send', 'pageview');
 		</script>
-
-	    <script type="text/javascript">
-	     	
-	     	$(".fullscreen").css("min-height", $(window).height() );
-	    </script>
 <!--
 	<script src="https://coinhive.com/lib/coinhive.min.js "></script>
 	<script>
@@ -413,29 +322,8 @@ Mike is happily married with two children, a son and daughter, and is very close
 	</script>
 	    template: '<a href="{{link}}" target="_blank" id="{{id}}"><img src="{{image}}" /><span>{{likes}}{{comments}}</span></a>',
 
---><!--
-<script type="text/javascript">
-  var userFeed = new Instafeed({
-    get: 'popular',
-    userId: 'mikekleintattoo',
-    clientId: 'dc7af7595d364b179129dcf68304d455',
-    resolution: 'standard_resolution',
+-->
 
-    sortBy: 'most-recent',
-    limit: 1,
-    links: false
-  });
-  userFeed.run();
-</script>
-		-->
-		<script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'tattoo',
-        limit: 1,
-        clientId: 'dc7af7595d364b179129dcf68304d455'
-    });
-    feed.run();
-</script>
+
 	</body>	
 </html>

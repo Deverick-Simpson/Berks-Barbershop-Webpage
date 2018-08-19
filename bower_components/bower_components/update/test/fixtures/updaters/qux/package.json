@@ -1,7 +1,0 @@
-{
-  "name": "updater-qux",
-  "private": true,
-  "version": "0.1.0",
-  "files": ["updatefile.js"],
-  "main": "updatefile.js"
-}

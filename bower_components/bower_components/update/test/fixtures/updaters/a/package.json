@@ -1,7 +1,0 @@
-{
-  "name": "updater-a",
-  "private": true,
-  "version": "0.1.0",
-  "files": ["index.js"],
-  "main": "updatefile.js"
-}
